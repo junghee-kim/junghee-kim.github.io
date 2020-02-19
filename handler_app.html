@@ -83,8 +83,8 @@
         color:#000;
         margin: 0;
         padding: 0;
-		overflow-x: hidden;
     }
+
 	ul, li {list-style-type:none;margin:0;padding:0;}
 	.tabs > li { width: 100%; }
     .tabs > li > a { color: #c5c8ce; padding: 15px 0 15px 0; display: block; background: #fff; text-align: center; text-decoration: none; font-size: 14px; line-height: 20px; border-bottom:  1px solid #c5c8ce; -webkit-transition: all .2s ease-in-out; transition: all .2s ease-in-out; }
@@ -92,9 +92,19 @@
 
 
   element.style {width: 20%; }
-  .swiper-container {  z-index: 999;}
 	.swiper-container-2 { padding-top: 40px; overflow: hidden;}
-	.swiper-container-2 .swiper-slide { background:#fff; font-size: 20px; box-sizing: border-box; }
+	.swiper-container-2 .swiper-slide { padding-top:10%;font-size: 20px; box-sizing: border-box; }
+
+
+
+
+
+
+
+
+
+
+
 
 
 	#footer{background:pink;padding:20px 15px;font-size:16px;}
@@ -103,9 +113,9 @@
 </head>
 <body>
     <!-- Swiper -->
-    <div class="swiper-container">
-		<ul class="swiper-wrapper tabs" style="position: fixed; " >
-			<li class="swiper-slide active" style="width: 100px;" ><a href="#">핸들러 서비스</a></li>
+    <div class="swiper-container" style="position: fixed;background:#fff; z-index:99;">
+		<ul class="swiper-wrapper tabs">
+			<li class="swiper-slide active" ><a href="#">핸들러 서비스</a></li>
 			<li class="swiper-slide"><a href="#">기본 매뉴얼</a></li>
 			<li class="swiper-slide"><a href="#">참고사항</a></li>
 			<li class="swiper-slide"><a href="#">주의사항</a></li>
@@ -142,7 +152,7 @@
                       <div id="tab1" class="tabcontent current">
 
                       <h2>핸들러 서비스란?</h2>
-                      
+
             <ul style="margin-top:0; margin-bottom:0;">
               <li dir="ltr">
               <hr align="left" style="border: solid 2px #374553; width: 20%; margin-bottom:-0.3em;">
@@ -680,7 +690,7 @@
     <script>
     var swiper_1 = new Swiper('.swiper-container', {
         pagination: '.swiper-pagination',
-        slidesPerView: 2.5,
+        slidesPerView: 1.7,
         paginationClickable: true,
         spaceBetween: 0,
         freeMode: true,
