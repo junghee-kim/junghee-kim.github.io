@@ -746,7 +746,7 @@
 
 	var tabLen = $('.tabs > li').length;
 
-	/* 2016-05-13 수정 */
+	
 	var swiper_2 = new Swiper('.swiper-container-2', {
 		autoHeight: true,
         slidesPerView: 1,
@@ -763,13 +763,10 @@
 			} else if( idx == tabLen ){
 				idx = 0;
 			}
-			$('.tabs > li').removeClass('active').eq(idx).addClass('active');
-			if( idx < tabLen ) {
-				swiper_1.slideTo(idx-1, 300);
-			}
+	
 		}
     });
-	/* //2016-05-13 수정 */
+
 
     </script>
 
