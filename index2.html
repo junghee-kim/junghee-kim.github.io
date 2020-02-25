@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Tab Swiper</title>
+  <meta name="viewport" content="width=100%; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+  <link rel='stylesheet' href='https://cdn.bootcss.com/Swiper/3.3.1/css/swiper.min.css'>
+  <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
+  <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css' rel='stylesheet' type='text/css'>
+<style>
+
+<style>
+body,html{word-break:keep-all; overflow-wrap:break-word; overflow-x: hidden; font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';}
+body{min-height:100%}
+h1,h2,h3,h4,h5,h6,p,ol,ul,li,td,u,a{color:#374553}
+h1,h2,h3,h4,h5,h6{font-weight:700}
+ul{list-style: none;   padding-inline-start:0px;}
+p,ol,ul,li,td,u,em{line-height:1.5rem;font-size:15px}
+ol{padding-inline-start: 20px;}
+ul2{padding-left:0rem; line-height:1.8rem;font-size:15px }
+.btn{text-decoration:none !important}
+a{font-weight:500;text-decoration:none !important}
+h1{font-size:28px;margin-bottom:1rem; margin-top:48px}h2{font-size:24px;margin-top:48px}h3{font-size:20px}h4{font-size:16px}
+.term-contents p{margin-inline-end: 20px; margin-top:1.5rem; }
+.term-contents h2{margin-bottom:1rem}
+.term-contents ul,.term-contents ol{margin-top:0.5rem; margin-left:0.5rem;  counter-reset:item}
+.term-contents ol>li{display:block}
+.term-contents ol>li:before{font-weight:bold;position:absolute;margin-left:-3rem;width:2rem;text-align:right}
+.term-contents li{margin-bottom:2rem;}.term-contents li:before{content:"(" counter(item) ") ";counter-increment:item}
+.term-contents li li{margin-bottom:0.6rem}.term-contents li li:before{content:counter(item) ". "}
+.term-contents li li li:before{content:counter(item,lower-alpha) ". "}
+.term-contents ul>li:before{content:"" !important;display:none}
+@media (min-width: 992px){.container{width:750px}}.text-danger{color:#374553;font-weight:bold}.p-4{padding:16px !important}
+
+.container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 50px;}
+
+  @media (min-width: 576px) {
+    .container {
+      padding-right: 15px;
+      padding-left: 15px; } }
+  @media (min-width: 768px) {
+    .container {
+      padding-right: 15px;
+      padding-left: 15px; } }
+  @media (min-width: 992px) {
+    .container {
+      padding-right: 15px;
+      padding-left: 15px; } }
+  @media (min-width: 1200px) {
+    .container {
+      padding-right: 15px;
+      padding-left: 15px; } }
+  @media (min-width: 576px) {
+    .container {
+      width: 540px;
+      max-width: 100%; } }
+  @media (min-width: 768px) {
+    .container {
+      width: 720px;
+      max-width: 100%; } }
+  @media (min-width: 992px) {
+    .container {
+      width: 960px;
+      max-width: 100%; } }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1140px;
+      max-width: 100%; } }
+
+body {  margin: 0;
+        padding: 0;}
+
+.jbMenu {
+text-align: left;
+background-color: #ffffff;  }
+
+.jbFixed {
+position: fixed;
+top: 0px;
+z-index: 999;
+
+}
+
+		.show{
+			width:100%;
+    overflow:hidden;
+			margin:0 auto;
+			height:100px;
+			border:5px solid #eee;
+			border-radius:5px;
+			font-size:14px;
+
+		}
+
+
+
+
+.swiper1 {
+        width: 100%;
+        color:#c5cec8;
+        border-bottom:1px solid #c5cec8;
+    }
+.swiper1 .selected{
+
+  color:#28323c;
+  border-bottom:1px solid #28323c;
+}
+.swiper1 .swiper-slide {
+        text-align: center;
+        font-size: 14px;
+        height:50px;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        cursor:pointer;
+}
+
+.swiper2 {
+  width: 100%;
+  height: 100%;
+}
+.swiper2 .swiper-slide{
+  height: 100%;
+
+}
+</style>
+
+</head>
+<body>
+
+  <!-- swiper1 -->
+    <div class="jbMenu">
+  <div class="swiper1">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide selected">핸들러 서비스</div>
+            <div class="swiper-slide">기본 매뉴얼</div>
+            <div class="swiper-slide">菜单 3</div>
+            <div class="swiper-slide">菜单 4</div>
+
+        </div>
+  </div></div>
+  <!-- swiper2 -->
+  <div class="swiper-container swiper2">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+
+
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <section class="term-contents">
+                    <p> <h3>🚙</h3></p>
+                    <h1>핸들러 서비스란?</h1>
+                    <p class="sub">모빌리티 플랫폼의 다양한 역할을 대행하고<br>
+      부가 수입을 올리세요!</p>
+
+          <ul style="margin-top:0; margin-bottom:0;">
+            <li dir="ltr">
+              <hr align="left" style="border: solid 1px #374553; width:15%; margin-top:4em; margin-bottom:-0.1em;">
+
+              <p><h3>핸들러 서비스</h3><br>
+
+
+              <div style="position: relative; height:0; padding-bottom: 56.25%;">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/YPpXUHa2fDo?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; width:100%; height:100%;"></iframe>
+              </div></p>
+
+
+
+              <ul>
+                <li dir="ltr">
+                  <p>핸들러 서비스는 이동, 주차, 세차 등
+      다양한 미션(핸들)을 완료하고 리워드를 받는 플랫폼입니다.
+              </p>
+                </li>
+                <li dir="ltr">
+                  <p>주중 뿐만 아니라, 저녁 심야 시간에도
+                  내가 편한 시간에 언제든지 핸들 할 수 있어요! </p>
+                </li>
+              </ul>
+
+
+            <li dir="ltr">
+              <hr align="left" style="border: solid 1px #374553; width:15%; margin-top:4em; margin-bottom:-0.1em;">
+              <p><h3>
+            가입부터 승인까지</h3><br>
+
+
+              <div style="position: relative; height:0; padding-bottom: 56.25%;">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/py_JXSoA9qc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; width:100%; height:100%;"></iframe>
+              </div>
+
+                </p>
+              <ul>
+                <li dir="ltr">
+                  <p>본인 명의 휴대전화만 가입할 수 있으며,
+      만 24세 이상, 면허 취득 후 1년 이상 경과한 이후에만 가입 및 이용이 가능해요!</p>
+                </li>
+                <li dir="ltr">
+                  <p>가입 신청 후, 승인 절차가 진행되며 승인까지는 최대 2영업일이 소요됩니다.</p>
+                </li>
+              </ul>
+
+            <li dir="ltr">
+              <hr align="left" style="border: solid 1px #374553; width:15%; margin-top:4em; margin-bottom:-0.1em;">
+              <p><h3>정산은 이렇게!</h3><br>
+
+              <div style="position: relative; height:0; padding-bottom: 56.25%;">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/8HmiOKidU-Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; width:100%; height:100%;"></iframe>
+              </div>
+            </p>
+
+                <ul>
+                  <li dir="ltr">
+                    <p>정산은 별도 신청없이 매주 자동으로 지급됩니다.</p>
+                  </li>
+                  <li dir="ltr">
+                    <p>전 주 월요일 ~ 일요일까지 지급된 리워드가
+        매주 화요일에 입급됩니다. 모든 리워드의 3.3% 소득세가 선 공제됩니다.
+        리워드 내역은 정산내역 - 리워드 에서 확인할 수 있어요.</p>
+                  </li>
+                </ul>
+
+  </div>
+  </div>
+  </div>
+  </div>
+          <div class="swiper-slide">内容 2</div>
+          <div class="swiper-slide">内容 3</div>
+          <div class="swiper-slide">内容 4</div>
+
+      </div>
+  </div>
+
+</div>
+<!-- partial -->
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src='https://cdn.bootcss.com/Swiper/3.3.1/js/swiper.jquery.min.js'></script>
+<script>
+window.onload = function() {
+
+  function setCurrentSlide(ele,index){
+    $(".swiper1 .swiper-slide").removeClass("selected");
+    ele.addClass("selected");
+    //swiper1.initialSlide=index;
+  }
+
+  var swiper1 = new Swiper('.swiper1', {
+        slidesPerView: 4,
+        paginationClickable: true,
+        spaceBetween: 0,
+        freeMode: true,
+        loop: false,
+        onTab:function(swiper){
+          var n = swiper1.clickedIndex;
+          alert(1);
+        }
+    });
+  swiper1.slides.each(function(index,val){
+    var ele=$(this);
+    ele.on("click",function(){
+      setCurrentSlide(ele,index);
+      swiper2.slideTo(index, 500, false);
+      //mySwiper.initialSlide=index;
+    });
+  });
+
+
+var swiper2 = new Swiper ('.swiper2', {
+    direction: 'horizontal',
+    loop: false,
+    autoHeight: true,
+    onSlideChangeEnd: function(swiper){
+      var n=swiper.activeIndex;
+      setCurrentSlide($(".swiper1 .swiper-slide").eq(n),n);
+      swiper1.slideTo(n, 500, false);
+    }
+  });
+//mySwiper.params.control = swiper;//需要在Swiper2初始化后，Swiper1控制Swiper2
+//swiper.params.control = mySwiper;//需要在Swiper1初始化后，Swiper2控制Swiper1
+	$(".start").on('click',function(){
+		$(".show").html('');
+		var flag = true,j = 0;
+			//if(flag){
+				//flag = false;
+				(function play(){
+					if(j < poem.length){
+						setTimeout(function(){
+							$(".show").html(poem.slice(0,j++));
+							play();
+						},200);
+					}
+					else{
+						$(".show").html(poem);
+						flag = true;
+					}
+				})();
+			//}
+	});
+
+
+}
+</script>
+
+<script>
+
+
+
+
+     var lnb = $(".jbMenu").offset().top;
+     $(window).scroll(function() {
+        var window = $(this).scrollTop();
+
+         if(lnb <= window) {
+           $(".jbMenu").addClass("jbFixed");
+         } else {
+           $(".jbMenu").removeClass("jbFixed");
+         }
+     })
+   </script>
+
+
+</body>
+</html>
