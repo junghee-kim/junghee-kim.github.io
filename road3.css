@@ -171,14 +171,16 @@ font-size: 14px;
 
   .road-top {
   vertical-align: middle;
-  width: 35%;
+  width: 50%;
   padding-left: 24px;
+  padding-top: 0px;
+
   text-align:left;
   }
   .road-middle {
     vertical-align: middle;
-    padding-left: 16px;
-    width: 60%;
+    padding-left: 0px;
+    width: 90%;
     text-align:left;
   }
   .road-bottom {
@@ -206,7 +208,6 @@ text-align:left;
 .map-bottom {
   vertical-align: middle;
   width: 20%;
-  padding-right: 24px;
   text-align:left;
   }
 
