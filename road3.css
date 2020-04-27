@@ -1,21 +1,28 @@
 
 
 @font-face {
-    font-family: Spoqa Han Sans;
-    src: url(https://frontend-design-system.socar.kr/fonts/SpoqaHanSansRegular.woff2);
+    font-family: SDGothicNeo;
+    src: url(https://frontend-design-system.socar.kr/fonts/SDGothicNeobTTF-bLt.ttf);
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: SDGothicNeo;
+    src: url(https://frontend-design-system.socar.kr/fonts/SDGothicNeobTTF-dMd.ttf);
     font-weight: normal;
 }
 
 @font-face {
-    font-family: Spoqa Han Sans;
-    src: url(https://frontend-design-system.socar.kr/fonts/SpoqaHanSansBold.woff2);
+    font-family: SDGothicNeo;
+    src: url(https://frontend-design-system.socar.kr/fonts/SDGothicNeobTTF-fBd.ttf);
     font-weight: bold;
 }
 
 
 
+
 body,html,section{ margin: 0px;
-  word-break:keep-all; overflow-wrap:break-word;   font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif'; }
+  word-break:keep-all; overflow-wrap:break-word;   font-family: 'SDGothicNeo', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";}
 
 p{ margin-block-end: 0px; margin-block-start: 0px; margin-right: 20px;}
 
@@ -26,7 +33,7 @@ h1,sub1,b1,c1{font-weight: bold;}
 b1,c2,c3{font-weight: normal;}
 
 h1{font-size:32px; line-height:42px;}
-h2{font-size:24px; line-height:30px; margin-block-end:16px; margin-block-start: 8px; }
+h2{font-size:24px; line-height:32px; margin-block-end:16px; margin-block-start: 8px; }
 h3{font-size:18px; line-height:24px;}
 
 b1{font-size:12px;line-height:22px;}
@@ -37,9 +44,6 @@ c1{font-size:14px;line-height:22px;}
 c2{font-size:12px;line-height:14px;}
 c3{font-size:12px;line-height:18px;}
 c4{font-size:12px;line-height:22px;}
-
-
-ul {padding-inline-start: 8px; margin-block-start: 0px;}
 
 
 
@@ -57,7 +61,7 @@ ul {padding-inline-start: 8px; margin-block-start: 0px;}
 #con1{
   background: #ffffff;
   padding-top: 48px;
-  padding-bottom: 48px;
+  padding-bottom: 60px;
 
 
 
