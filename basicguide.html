@@ -15,6 +15,11 @@
   <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
   <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css' rel='stylesheet' type='text/css'>
 
+  	<!-- Kakao API -->
+  	<script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+
+
+
 
 
 <style>
@@ -334,6 +339,9 @@
     </div>
   </div>
         </div>
+  <a href="javascript:void(0);" id="btn3" >카카오 링크보내기</a>
+
+
 <a href="index.html">
 <div class="bts2"><button id="pre"> 이전 </button>
 </div></a>
@@ -399,6 +407,21 @@
 
             });
         </script>
+
+
+
+    <script>
+        Kakao.init('eb75ed5f186c471ad37b3dbcd173e211'); //6번 항목에서 발급 받았던 javascript key를 여기에 넣는다.
+
+     $("#btn3").click(function(e) { //jquery를 사용한다 가정
+      e.preventDefault();   //이벤트 버블링 prevent
+
+      Kakao.Link.sendCustom({
+        templateId: 30799   // 15번 항목에서 확인하였던 이벤트번호 등록
+      });
+     });
+      </script>
+
 
 
 </html>
