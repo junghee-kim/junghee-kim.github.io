@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="kr"><head>
   <meta charset="utf-8">
@@ -11,10 +12,14 @@
   <meta http-equiv="Expires" content="0">
   <meta name="viewport"
     content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
+  <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css' rel='stylesheet' type='text/css'>
 
   	<!-- Kakao API -->
   	<script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+
+
+
 
 
 <style>
@@ -45,7 +50,6 @@
     margin-right: auto;
     padding-right: 15px;
     padding-left: 15px; }
-
     @media (min-width: 576px) {
       .container {
         padding-right: 15px;
@@ -79,13 +83,105 @@
         width: 1140px;
         max-width: 100%; } }
 
+
+
+
+
         body {
+
             margin: 0;
-            padding: 0;}
+            padding: 0;
+        }
+
+
+        .footer{
+        font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
+        display: none;
+        position: fixed;
+        font-size: 16px;
+        color: #374553;
+        top:1em;
+        right: 10%;
+        bottom: 0px;
+        z-index: 999;
+
+      }
+
+
+      .bts2{
+        font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
+        background-color: #e9ebee;
+        font-size: 16px;
+        text-align: center;
+        height: 56px;
+        width: 50%;
+        float: left;
+        margin:  0px;
+
+      }
+
+      .bts1{
+        font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
+        background-color: #303ab2;
+        font-size: 16px;
+        text-align: center;
+        cursor:pointer;
+        height: 56px;
+        width: 50%;
+        margin:  0px;
+        bottom: 0px;
+        float:left;
+
+    }
+
+      #pre
+      { border: 0px solid #fff;
+      font-size: 16px;
+      background-color: #e9ebee;
+      height: 56px;
+      color: #fff;
+
+       }
+
+      #next
+      { border: 0px solid #fff;
+      background-color: #303ab2;
+      color: #fff;
+      font-size: 16px;
+      height: 56px;
+      margin-right: 0px;}
+
+
+
+      .jbMenu {
+        font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
+        text-align: left;
+        font-size: 28px;
+        color: #374553;
+        font-weight:700;
+        width: 100%;
+      }
+
+      .jbFixed {
+        font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
+        position: fixed;
+        top: 0px;
+        left:0px;
+        background-color: #ffffff;
+        padding: 15px 24px;
+        border-bottom:1px solid #e9ebee;
+        font-size: 16px;
+        color: #374553;
+        font-weight:400;
+        z-index: 999;
+        box-shadow: 1px -3px 9px 0px rgba(0, 0, 0, 0.33)
+
+      }
 
 </style>
 
 
+<script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
 
 
 
@@ -121,13 +217,149 @@
                 <li dir="ltr">
                   <hr align="left" style="border: solid 1px #374553; width:15%; margin-top:4em; margin-bottom:-0.1em;">
 
-  <input type="button" onClick="shareKakaotalk();" value="KAKOA Talk으로 공유하기"/>
+
+
+
+
+
+                  <ul style="margin-top:0; margin-bottom:0;">
+                  <li dir="ltr">
+                  <p><h3>핸들잡기</h3><br>
+
+
+                  <div style="position: relative; height:0; padding-bottom: 56.25%;">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/yGy52vMd8TA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; width:100%; height:100%;"></iframe>
+                  </div></p>
+
+
+
+                  <ul>
+                  <ol>
+                  <li style="margin-left: 10px;">핸들할게요 상태로 바꾸면, 준비 완료!				</li>
+                  <li style="margin-left: 10px;">'보기 설정'과 '리스트 설정' 에서
+                  원하는 시간과 지역의 핸들을 조회하세요.</li>
+                  <li style="margin-left: 10px;">핸들리스트에서 '핸들잡기'가 표시되면 바로 핸들을 잡을 수 있습니다.</li>
+                   <li style="margin-left: 10px;">핸들의 알림을 켜면, 잡을 수 있는 시간에 푸시를 보내드려요.</li>
+                  </ol>
+
+                  </ul>
+                  </li>
+                  <li dir="ltr">
+                    <hr align="left" style="border: solid 1px #374553; width:15%; margin-top:4em; margin-bottom:-0.1em;">
+
+                  <p><h3>운행 전</h3><br>
+
+
+                  <div style="position: relative; height:0; padding-bottom: 56.25%;">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/BG8p-qoXrw4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; width:100%; height:100%;"></iframe>
+                  </div>
+
+                  </p>
+                  <ul>
+                  <ol>
+                  <li style="margin-left: 10px;">출발지에서 차량을 찾아주세요.</li>
+                  <li style="margin-left: 10px;">차량에 도착하면, 가이드에 따라 외부 상태를 확인하고 사진을 촬영해주세요.</li>
+                  <li style="margin-left: 10px;">심각한 외관 손상, 경고등 점등이 있을 경우 탁송센터로 신고해주세요.</li>
+                   <li style="margin-left: 10px;">출발 전, 정확한 도착지를 확인한 후 출발해주세요.</li>
+                  </ol>
+
+                  </ul>
+                  </li>
+
+
+
+
+                  <li dir="ltr">
+                    <hr align="left" style="border: solid 1px #374553; width:15%; margin-top:4em; margin-bottom:-0.1em;">
+
+                  <p><h3>운행 중</h3><br>
+
+
+                  <div style="position: relative; height:0; padding-bottom: 56.25%;">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/H3Z--77dtZM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; width:100%; height:100%;"></iframe>
+                  </div>
+
+                  </p>
+                  <ul>
+                  <ol>
+                  <li style="margin-left: 10px;">정해진 장소, 시간, 목적에 맞게 운행해주세요.</li>
+                  <li style="margin-left: 10px;">주차비가 발생했다면 먼저 결제해주시고, 앱에서 청구하여 환불받으세요.</li>
+                  <li style="margin-left: 10px;">각 핸들별 주어진 미션을 수행하고 미션 인증 화면에서 인증을 남겨주세요.</li>
+                   <li style="margin-left: 10px;">언제나 안전운전하시는 것 잊지마세요!</li>
+                  </ol>
+
+                  </ul>
+                  </li>
+
+
+
+                  <li dir="ltr">
+                    <hr align="left" style="border: solid 1px #374553; width:15%; margin-top:4em; margin-bottom:-0.1em;">
+
+                  <p><h3>반납</h3><br>
+
+
+                  <div style="position: relative; height:0; padding-bottom: 56.25%;">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/nUejK5f-BmI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; width:100%; height:100%;"></iframe>
+                  </div>
+
+                  </p>
+                  <ul>
+                  <ol>
+                  <li style="margin-left: 10px;">도착지가 정확한 주소인지 다시 확인해주세요.</li>
+                  <li style="margin-left: 10px;">요청한 구역, 정해진 위치에 주차해주시고, 주차가 불가할 경우 탁송센터로 연락주세요.</li>
+                  <li style="margin-left: 10px;">주차 완료 후 가이드에 따라 차량 점검을 진행해주세요.</li>
+                   <li style="margin-left: 10px;">다음 이용자를 위해 반납 위치의 사진과 정확한 메모를 남겨주세요.</li>
+                  </ol>
+
+                  </ul>
+                  </li>
+
+
+
+
+
+
+
+
+
+
+
+
+                  </ul>
+
+
+  <a href="javascript:void(0);" id="btn3" ><font style="color: #646f7c;">카카오 링크보내기</font></a>
 
         </section>
 
 
 
 
+      </div>
+    </div>
+  </div>
+        </div>
+
+
+<a href="index.html">
+<div class="bts2"><button id="pre"> 이전 </button>
+</div></a>
+
+
+<a href="plusguide.html"><div class="bts1">
+  <button id="next"> 다음 </button> </div> </a>
+
+
+
+
+
+
+
+<div class="footer">
+
+2 / 4
+        </div>
 
 
 
@@ -140,37 +372,55 @@
 
 
 
-      <script type="text/javascript">
-          function shareKakaotalk() {
-              Kakao.init('eb75ed5f186c471ad37b3dbcd173e211');      // 사용할 앱의 JavaScript 키를 설정
+<script>
+     $( document ).ready( function() {
+       var jbOffset = $( '.jbMenu' ).offset();
+       $( window ).scroll( function() {
+         if ( $( document ).scrollTop() > jbOffset.top ) {
+           $( '.jbMenu' ).addClass( 'jbFixed' );
+         }
+         else {
+           $( '.jbMenu' ).removeClass( 'jbFixed' );
+         }
+       });
+     } );
+   </script>
 
 
-              Kakao.Link.sendDefault({
-                    objectType:"feed"
-                  , content : {
-                        title:"타이틀"   // 콘텐츠의 타이틀
-                      , description:"상세설명"   // 콘텐츠 상세설명
-                      , imageUrl:"https://d353obgi8xzt9w.cloudfront.net/notice/20200508/f77a73c7ab204ee571f7fb4fe4323857.png"   // 썸네일 이미지
-                      , link : {
-                            mobileWebUrl:"https://junghee-kim.github.io/basicguide.html"   // 모바일 카카오톡에서 사용하는 웹 링크 URL
-                          , webUrl:"https://junghee-kim.github.io/basicguide.html" // PC버전 카카오톡에서 사용하는 웹 링크 URL
-                      }
-                  }
 
-                  , buttons : [
-                      {
-                            title:"공유하기"    // 버튼 제목
-                          , link : {
-                              mobileWebUrl:"https://junghee-kim.github.io/basicguide.html"   // 모바일 카카오톡에서 사용하는 웹 링크 URL
-                            , webUrl:"https://junghee-kim.github.io/basicguide.html" // PC버전 카카오톡에서 사용하는 웹 링크 URL
-                          }
-                      }
-                  ]
-              });
-          }
+
+
+      <script>
+
+
+            $(document).ready(function() {
+                //Show or hide the sticky footer button
+                $(window).scroll(function() {
+                    if ($(this).scrollTop() > 200) {
+                        $('.footer').fadeIn(100);
+                    } else {
+                        $('.footer').fadeOut(0);
+                    }
+                });
+
+                //Animate the scroll to top
+
+            });
+        </script>
+
+
+
+    <script>
+        Kakao.init('eb75ed5f186c471ad37b3dbcd173e211'); //6번 항목에서 발급 받았던 javascript key를 여기에 넣는다.
+
+     $("#btn3").click(function(e) { //jquery를 사용한다 가정
+      e.preventDefault();   //이벤트 버블링 prevent
+
+      Kakao.Link.sendCustom({
+        templateId: 30799   // 15번 항목에서 확인하였던 이벤트번호 등록
+      });
+     });
       </script>
-
-
 
 
 
