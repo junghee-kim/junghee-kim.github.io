@@ -201,8 +201,7 @@ background: linear-gradient(180deg, #F7F8F9 0%, #E9EBEE 100%);
     }
 
 
-        .cont {position: relative; box-shadow:  0px 10px 30px rgba(40, 50, 60, 0.1); border-radius: 16px; background: rgba(255, 255, 255, 0.6);  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px); z-index: 999;}
+        .cont {position: relative; box-shadow:  0px 10px 30px rgba(40, 50, 60, 0.1); border-radius: 16px; background: rgba(255, 255, 255, 0.6); z-index: 999;}
         .cont .item {padding-left:34px; padding-right: 32px; padding-bottom: 50px; padding-top: 10px;border-radius: 16px;    -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px); }
         .cont .item .text{margin-top:0px; margin-bottom:14px; }
