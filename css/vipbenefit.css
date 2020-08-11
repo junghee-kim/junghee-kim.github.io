@@ -291,10 +291,10 @@ input[type=radio]:checked + label{
                 .submenuItems li {
                   background: #ffffff;
                 border-radius: 0px;
-                  padding-left: 136px;
-                  padding-right: 14%;
+                  padding-right: 12%;
                   padding-bottom: 32px;
                   margin-bottom:16px;
+                  padding-left: 32px;
                   border-bottom: 1px solid #e9ebee;
 
                 }
