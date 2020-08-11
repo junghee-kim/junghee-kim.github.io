@@ -34,7 +34,7 @@ a{text-decoration: none; color:#28323C;}
 h1,sub1,b1,c2{font-weight: bold;}
 b1,c3{font-weight: normal;}
 
-h1{font-size:32px; line-height:42px; margin-block-start: 68px; margin-block-end:14px;}
+h1{font-size:32px; line-height:42px; margin-block-start: 0px; margin-block-end:14px;}
 h2{font-size:18px; line-height:26px; margin-block-end:16px; margin-block-start: 60px; }
 
 
@@ -43,7 +43,7 @@ b2{font-size:16px; line-height:26px;}
 
 
 c1{font-size:14px;line-height:22px;}
-c2{font-size:14px;line-height:22px;}
+c2{font-size:16px;line-height:28px;}
 
 c3{font-size:14px;line-height:22px;}
 
@@ -51,9 +51,8 @@ c3{font-size:14px;line-height:22px;}
 
 
 #main{
-  background: linear-gradient(0deg, #FFFFFF 14.99%, #E4F2FF 85.73%);
+  background: #ffffff;
   margin: 0px;
-  padding-top: 80px;
   background-size:cover;
   background-position:center;
 }
@@ -227,7 +226,7 @@ input[type=radio]:checked + label{
 
 .xi-angle-down:before {
   color: #646f7c;
-  font-size: 20px;
+  font-size: 16px;
 }
     .item2{margin-top: 12px;}
                 .accordion-menu {
@@ -240,7 +239,7 @@ input[type=radio]:checked + label{
                   color: #374553;
 
                 }
-                .accordion-menu li.open .dropdownlink .xi-angle-down {
+                .accordion-menu li.open .dropdownlink .xi-angle-down-thin {
                   -webkit-transform: rotate(180deg);
                           transform: rotate(180deg);
 
@@ -250,8 +249,6 @@ input[type=radio]:checked + label{
                 }
 
                 .accordion-menu li:last-child .dropdownlink {
-                  padding: 14px;
-
 
                 }
 
@@ -261,7 +258,9 @@ input[type=radio]:checked + label{
                   cursor: pointer;
                   display: block;
                   background:#ffffff;
-                  padding: 12px;
+                  padding-top: 20px;
+                  padding-bottom: 20px;
+                  padding-left: 14px;
 
 
                   position: relative;
@@ -273,7 +272,7 @@ input[type=radio]:checked + label{
                   top: 30px;
                   left: 16px;
                 }
-                .dropdownlink .xi-angle-down {
+                .dropdownlink .xi-angle-down-thin {
                   right: 30px;
                   left: auto;
                   top: 30px;
@@ -320,7 +319,7 @@ input[type=radio]:checked + label{
                                                           }
                         .jb-top {
                           vertical-align: top;
-                            width: 30%;
+                            width: 20%;
                               text-align:left;}
 
 
@@ -328,7 +327,7 @@ input[type=radio]:checked + label{
                           vertical-align: middle;
                           width: 55%;
                           line-height: 22px;
-                          padding-left: 12px;
+                          padding-left: 8px;
                             text-align:left;
                         }
                         .jb-bottom {
