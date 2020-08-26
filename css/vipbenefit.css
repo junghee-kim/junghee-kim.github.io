@@ -196,6 +196,7 @@ line-height: 20px;     }
 
 
 input[type=radio]{
+  display: none;
 	width: 0;
   height: 0;
   position: absolute;
@@ -204,6 +205,7 @@ input[type=radio]{
 input[type=radio] + label{
   border: 1px solid #E9EBEE;
   color: #646F7C;
+  margin: 4px;
   background: #ffffff;
   vertical-align: middle;
   text-align: center;
@@ -425,7 +427,6 @@ background: #ffffff;
 
 .container_menu{
   padding-left: 22px;
-  padding-right: 24px;
   padding-top: 12px;
 
 }
@@ -624,3 +625,4 @@ max-width: 100%; }
 
 
   }
+
