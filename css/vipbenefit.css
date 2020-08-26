@@ -200,9 +200,13 @@ input[type=radio]{
 	width: 0;
   height: 0;
   position: absolute;
+	  decoration: none;
+
 
 }
 input[type=radio] + label{
+  decoration: none;
+
   border: 1px solid #E9EBEE;
   color: #646F7C;
   margin: 4px;
