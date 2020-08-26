@@ -42,12 +42,10 @@ b1{font-size:16px; line-height:26px;}
 b2{font-size:16px; line-height:26px;}
 
 
-
 c1{font-size:14px;line-height:22px;}
-c2{font-size:14px;line-height:22px;}
+c2{font-size:16px;line-height:28px;}
 
-c3{font-size:12px;line-height:20px;}
-
+c3{font-size:14px;line-height:22px;}
 
 
 
@@ -198,8 +196,6 @@ line-height: 20px;     }
 
 
 input[type=radio]{
-	  display: none;
-
 	width: 0;
   height: 0;
   position: absolute;
@@ -294,6 +290,8 @@ input[type=radio]:checked + label{
                 .submenuItems li {
                   background: #ffffff;
                 border-radius: 0px;
+                font-size: 14px;
+                line-height: 22px;
                   padding-right: 12%;
                   padding-bottom: 32px;
                   margin-bottom:16px;
@@ -342,29 +340,43 @@ input[type=radio]:checked + label{
 
 
 
-.swiper-container { width: 100%; height: auto;  margin-top: -24px;}
-.swiper-wrapper{width: 100%; height: auto;  margin: 0px;}
-.swiper-slide { width: 100%; margin: 0px; }
+
+                                                    .swiper-container { width: 100%; height: auto; margin-top: -24px;}
+                                                    .swiper-wrapper{width: 100%; height: auto;  margin: 0px;}
+                                                    .swiper-slide { width: 100%; margin: 0px; }
 
 
-.swiper-container {
-  width: 100%;
-  height: 100%;
-}
+                                                    .swiper-container {
+                                                      width: 100%;
+                                                      height: 100%;
+                                                    }
 
 
 
-.swiper-slide {
-text-align:left;
-display:flex;
-justify-content:center;
-margin-top: 60px;
-line-height: 22px;
-font-size: 14px;
+                                                    .swiper-slide {
+                                                    text-align:left;
+                                                    display:flex;
+                                                    justify-content:center;
+                                                    margin-top: 60px;
+                                                    line-height: 22px;
+                                                    font-size: 14px;
+                                                    width: 64%;
+                                                    margin-left: 24px;
 
-}
 
-.sw_txt {margin-right:20px; width:100%; color: #28323c; text-align:left; }
+
+                                                    }
+
+                                                    .swiper-slide:nth-child(2n) {
+                                                       width: 64%;
+                                                     }
+
+                                                     .swiper-slide:nth-child(3n) {
+                                                       width: 64%;
+
+                                                     }
+
+.sw_txt { width:100%; color: #28323c; text-align:left; }
 .sw_img {border-radius: 6px; margin-bottom: 20px; margin-top: 60px;}
 
 
