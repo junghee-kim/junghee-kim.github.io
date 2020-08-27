@@ -12,14 +12,6 @@
 }
 
 
-.socarvip-img{
-background:none;
-height:40px;
-width:100px;
-position:relative;
-border:0px;
--webkit-transform: rotate(0deg);
-}
 
 body,html,section{ margin: 0px;  word-break:keep-all; overflow-wrap:break-word;
 font-family: 'Spoqa Han Sans',sans-serif; background: #e9ebee;  }
@@ -182,7 +174,7 @@ border-radius: 6px;
 margin-top: 24px;
 margin-bottom: 40px;
 padding-left: 24px;
-padding-bottom: 48px;}
+padding-bottom: 36px;}
 
 
 .footer-txt {display: flex;
