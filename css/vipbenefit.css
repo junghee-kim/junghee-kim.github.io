@@ -52,8 +52,7 @@ c4{font-size:12px;line-height:18px;}
 
 
 #main{
-  background: #ffffff;
-  margin: 0px;
+background: #ffffff;  margin: 0px;
   background-size:cover;
   background-position:center;
 }
@@ -182,7 +181,9 @@ margin-right: 0px;}
 border-radius: 6px;
 margin-top: 24px;
 margin-bottom: 40px;
-padding-left: 24px;}
+padding-left: 24px;
+padding-bottom: 40px;}
+
 
 .footer-txt {display: flex;
 margin-bottom: 6px;}
@@ -299,7 +300,7 @@ input[type=radio]:checked + label{
                 border-radius: 0px;
                 font-size: 14px;
                 line-height: 22px;
-                  padding-right: 12%;
+                  padding-right: 24px;
                   padding-bottom: 32px;
                   margin-bottom:16px;
                   padding-left: 24px;
