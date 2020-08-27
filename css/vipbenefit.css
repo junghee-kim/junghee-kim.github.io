@@ -195,15 +195,14 @@ line-height: 20px;     }
 
 
 
-
 input[type=radio]{
-decoration: none;
 width: 0;
   height: 0;
-  position: absolute;
+  display:none;
+
 
 }
-input[type=radio] + label{
+input[type=radio] + label{    display:inline-block;
   decoration: none;
   border: 1px solid #E9EBEE;
   color: #646F7C;
@@ -226,6 +225,8 @@ input[type=radio]:checked + label{
   color: #ffffff;
   border: 1px solid #00b8ff;
 }
+
+
 
 
 .xi-angle-down:before {
