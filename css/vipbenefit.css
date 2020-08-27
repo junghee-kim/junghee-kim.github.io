@@ -61,7 +61,7 @@ c4{font-size:12px;line-height:18px;}
 
 #vip{  background: #ffffff;
 
-  padding-bottom: 60px;
+  padding-bottom: 40px;
   border-bottom: 1px solid #E9EBEE;
   margin: 0px;
   background-size:cover;
@@ -82,7 +82,7 @@ c4{font-size:12px;line-height:18px;}
 #menu{
   background: #f7f8f9;
   margin-top: 28px;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
 }
 
 
@@ -178,6 +178,11 @@ font-size: 14px;
 height: 54px;
 margin-right: 0px;}
 
+.vip_box{border: 0.5px solid #e9ebee;
+border-radius: 6px;
+margin-top: 24px;
+margin-bottom: 40px;
+padding-left: 24px;}
 
 .footer-txt {display: flex;
 margin-bottom: 6px;}
@@ -195,6 +200,7 @@ line-height: 20px;     }
 
 
 
+
 input[type=radio]{
 width: 0;
   height: 0;
@@ -203,15 +209,14 @@ width: 0;
 
 }
 input[type=radio] + label{    display:inline-block;
-  decoration: none;
   border: 1px solid #E9EBEE;
   color: #646F7C;
-  margin: 4px;
+  margin: 1px;
+  margin-bottom: 8px;
   background: #ffffff;
   vertical-align: middle;
   text-align: center;
   border-radius: 40px;
-  height: 36px;
   box-sizing: border-box;
   padding-left: 16px;
     padding-right: 16px;
@@ -225,8 +230,6 @@ input[type=radio]:checked + label{
   color: #ffffff;
   border: 1px solid #00b8ff;
 }
-
-
 
 
 .xi-angle-down:before {
@@ -382,7 +385,7 @@ input[type=radio]:checked + label{
                                                      }
 
 .sw_txt { width:100%; color: #28323c; text-align:left; }
-.sw_img {border-radius: 6px; margin-bottom: 20px; margin-top: 60px;}
+.sw_img {border-radius: 6px; margin-bottom: 20px; margin-top: 24px;}
 
 
 
@@ -430,7 +433,7 @@ background: #ffffff;
 
 .container_menu{
   padding-left: 22px;
-  padding-top: 12px;
+  padding-top: 32px;
 
 }
 
@@ -495,136 +498,6 @@ max-width: 100%; }
     margin-right: 10px;
 }
 
-      #main{
-        background: #f7f7f7;
-        margin: 0px;
-        padding-top: 30px;
-        background-size:cover;
-        background-position: 0% 100%;
-        height: 600px;
-        text-align:center;
-
-
-
-        }
-
-
-        #con1{
-          background: #ffffff;
-          padding-top: 100px;
-          margin-left: 10px;
-
-
-
-
-
-
-        }
-
-        #con2{
-          background: #374553;
-          background-size:cover;
-          background-position:center;
-          height:600px;
-          background-position: 10% 100%;
-          padding-top: 100px;
-          margin-top:80px;
-
-
-
-        }
-
-
-        #con3{
-          background: #ffffff;
-          padding-top: 100px;
-          margin-left: 10px;
-
-        }
-
-        #con4{
-          background: #ffffff;
-          padding-top: 120px;
-          padding-bottom: 100px;
-
-          margin-left: 10px;
-
-
-        }
-
-
-
-        #con9{
-          background: #ffffff;
-          height:600px;
-          margin-top:180px;
-          padding-bottom:100px;
-          margin-left: 0px;
-          margin-right: 0px;
-
-
-        }
-
-
-
-        #btn
-        {margin-top: 40px;
-        text-align: center;
-        border: 0px solid #FFFFFF;
-        float: center;
-        border-radius: 4px;
-        width: 100%;
-        background: #c5c8ce;
-        height: 64px;
-        font-size: 18px;
-        font-weight:400;
-        color: #fff;}
-
-        #btn2
-        {padding-right: 32px;
-        margin-top: 48px;
-        text-align: left;
-
-        border: 0px solid #FFFFFF;
-        border-radius: 4px;
-        width: 100%;
-        background-color: #F7F8F9;
-        height: 100px;
-        font-weight:400;}
-
-
-        .swiper-slide {
-        text-align:left;
-        display:flex;
-        justify-content:center;
-        margin-top: 60px;
-        line-height: 28px;
-        font-size: 18px;
-
-        }
-
-
-
-              .map-top {
-              vertical-align: middle;
-              width: 350%;
-              text-align:left; }
-
-
-
-      h1{font-size:46px; line-height:58px;}
-      h2{font-size:24px; line-height:38px; font-weight:normal; }
-      h3{font-size:28px; line-height:38px; margin-block-start: 8px;}
-
-      b1{font-size:18px; line-height:28px;}
-      b2{font-size:18px;line-height:28px;}
-
-
-      c2{font-size:16px;line-height:14px;}
-      c3{font-size:16px;line-height:22px;}
-      c4{font-size:18px;line-height:28px;}
-
-      p{ margin-block-end: 0px; margin-block-start: 0px;   margin-right: 100px; }
 
 
   }
