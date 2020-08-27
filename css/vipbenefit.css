@@ -209,9 +209,9 @@ width: 0;
 
 }
 input[type=radio] + label{    display:inline-block;
-  border: 1px solid #E9EBEE;
+  border: 1.4px solid #E9EBEE;
   color: #646F7C;
-  margin: 1px;
+  margin: 2px;
   margin-bottom: 8px;
   background: #ffffff;
   vertical-align: middle;
