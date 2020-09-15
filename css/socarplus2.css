@@ -112,7 +112,11 @@ a:active{text-decoration:none;}
 #main section .content ol .title{font-weight:700; padding:0 0 15px 0; list-style:none;}
 
 
-#footer{position:relative;display:block; clear:both; padding:30px 0px 30px 0px; width:100%; border-top:1px solid #0F84F0;}
+#footer{position:relative;display:block;
+ clear:both; padding:30px 0px 30px 0px; width:100%; border-top:1px solid #0F84F0;
+ background-color: #ffffff;
+     z-index: 01;
+}
 #footer li {padding-left: 32px;  padding-right: 20%; list-style:none;}
 #navigation-menu_mo {padding-left: 30px; padding-top: 30px;}
 
