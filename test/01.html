@@ -26,12 +26,86 @@
 <script src='js/TweenMax.min.js'></script>
 <script src='js/animation.gsap.js'></script>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 </head>
 
 
+<style>
+	::selection {
+		background-color: #32198C;
+		color: #ffffff;
+	}
+	::selection {
+		background-color:  #EDFF39;
+		color: #1C1F2A;
+	}
+
+  #navigation-menu {padding: 30px;}
+  #main ul { padding-left: 44px; padding-right: 32px; }
+
+  .navigation-menu { }
+  .navigation-menu li {list-style:none; }
+  .navigation-menu li a { }
+  .navigation-menu li.on a {background-color:  #EDFF39;
+  color: #1C1F2A;}
+
+  .parent {
+    border: 20px;
+  }
+
+  .sticky-header {
+
+    padding: 0px;
+
+  }
+
+  @supports (position: sticky) {
+    .is-sticky {
+      position: sticky;
+      top: 0; // Threshold is required
+    }
+  }
+
+
+</style>
+
+<script type="text/javascript">
+//<![
+  $(document).ready(function(){
+    tabScroll(".navigation-menu");
+  });
+  function tabScroll(id){
+    var tabId = $(id);
+    var tabIdtop = tabId.offset().top;
+    var tabIdHe = tabId.height();
+
+    $(window).scroll(function(){
+
+    });
+
+    tabId.find("li").each(function(){
+      var liThis = $(this);
+      var divId = liThis.find("a").attr("href");
+      var divIdtop = $(divId).offset().top-tabIdHe;
+      liThis.bind("click", function(e){
+        e.preventDefault();
+        $('body,html').animate({scrollTop: divIdtop},200);
+      });
+      $(window).scroll(function(){
+        if ($(this).scrollTop() >= divIdtop-1 ) {
+          liThis.addClass("on").siblings().removeClass("on");
+        }
+      });
+    });
+  }
+
+</script>
+
 
 <body style="overflow-x:hidden">
+
 
 
 
@@ -51,18 +125,18 @@
         <div class="content">
 
 
-        <h3 data-aos="fade-up" data-aos-easing="ease" data-aos-delay="200">
+        <h3 >
           쏘카의 차량 전문가들이
-    <span class="highlight">엄격하게 관리한</span> 차량을 선별</h3>
+    <span>엄격하게 관리한</span> 차량을 선별</h3>
 
 
-    <h3 data-aos="fade-up" data-aos-easing="ease" data-aos-delay="400">
-  침수, 프레임사고, 전손사고 이력 차량은  <span class="highlight">전면 배제</span></h3>
+    <h3 >
+  침수, 프레임사고, 전손사고 이력 차량은  <span>전면 배제</span></h3>
 
 
-<h3 data-aos="fade-up" data-aos-easing="ease" data-aos-delay="600">
-제휴 정비 업체의 전문가의 <span class="highlight">꼼꼼한 검수를 통과한</span> 차량만 판매</h3>
-<b2 data-aos="fade-up" data-aos-easing="ease" data-aos-delay="800">* 캐스팅 진단 리포트를 확인해보세요.</b2>
+<h3>
+제휴 정비 업체의 전문가의 <span>꼼꼼한 검수를 통과한</span> 차량만 판매</h3>
+<b2 >* 캐스팅 진단 리포트를 확인해보세요.</b2>
         </div>
       </div>
 
@@ -72,119 +146,190 @@
 
     <section id="con3">
       <div class="container_right">
-      <h1 style="margin-left: 10px; margin-top:0px; padding-top:60px;">
+
+      <h1>
         캐스팅 차량의<br>
     재탄생 과정을<br>
     자세히 알아보세요.</h1>
-
+    <h3>엄격한 기준으로 선별한 전문 공업사에서
+판매 차량의 품질을 개선합니다.
+</h3>
       </div>
+
+
+
+
     </section>
 
 
+<div class="parent">
+    <div class="sticky-header is-sticky">
+          <nav id="navigation-menu">
+
+          <ul class="navigation-menu">
+
+          <li class="on">
+          <a href="#section01">성능검사</a></li>
+          <li><a href="#section02">내외부세차</a></li>
+          <li><a href="#section03">엔진룸 크리닝</a></li>
+          <li><a href="#section04">복원 작업</a></li>
+          <li><a href="#section05">열처리</a></li>
+          <li><a href="#section06">살균소독</a></li>
+          <li><a href="#section07">마무리</a></li></p>
+          </ul>
+                        </nav>
+    </div>
 
 
 
 
+    <section id="con4">
+  <div class="container_right" data-aos="fade-left">
+
+      <h3>
+
+        <div id="section01">
 
 
-            <section class="background-change-wrap">
-              <div>
-                <h1>  나와 함께할 새로운 차를 산다는 것은<br> 설레고
-            기분 좋은 경험이어야 하기에 </h1>
+  <div class="step">
 
+
+  <img src="https://images.unsplash.com/photo-1569176330438-fa1ed1042542?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2690&q=80" width="100%">
+
+  <div class="txt">
+
+  <div class="txt_title">
+
+    1. 성능검사  </div>
+
+
+    전문 성능검사장에서 자동차의 상태와 성능을 확인하고 검사합니다.
+  </div>
+    </div>
+  </div>
+
+
+  <div id="section02">
+
+  <div class="step">
+
+
+  <img src="https://images.unsplash.com/photo-1569176330438-fa1ed1042542?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2690&q=80" width="100%">
+
+  <div class="txt">
+
+  <div class="txt_title">
+
+      2. 내외부세차
+  </div>
+
+
+      철분, 타르 제거를 포함한 외부 세차와 실내 전용 세정제로 내부를 세차합니다.
+  </div>
+    </div>
+  </div>
+
+
+  <div id="section03">
+
+      <div class="step">
+
+
+      <img src="https://images.unsplash.com/photo-1569176330438-fa1ed1042542?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2690&q=80" width="100%">
+
+      <div class="txt">
+
+      <div class="txt_title">
+
+          3. 엔진룸 크리닝
+      </div>
+
+
+          엔진룸의 먼지와 오염물을 세척합니다.
+      </div>
+        </div>
+
+      </div>
+
+      <div id="section04">
+
+          <div class="step">
+
+
+          <img src="https://images.unsplash.com/photo-1569176330438-fa1ed1042542?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2690&q=80" width="100%">
+
+          <div class="txt">
+
+          <div class="txt_title">
+
+              4. 복원 작업
+          </div>
+
+
+              차량 외관에 손상된 부위가 있다면 도색, 덴트 작업 등을 통해 복원합니다.
+          </div>
+        </div></div>
+
+
+
+        <div id="section05">
+
+              <div class="step">
+
+
+              <img src="https://images.unsplash.com/photo-1569176330438-fa1ed1042542?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2690&q=80" width="100%">
+
+              <div class="txt">
+
+              <div class="txt_title">
+
+                  5. 열처리
               </div>
-            </section>
-            <section class="black-bg diff-desc-image-wrap">
-                <div class="image-wrap">
-
-                </div>
-            </section>
 
 
-    <section class="white-bg slide-up-wrap">
-
-      <h1 style="margin-left: 10px; margin-top:0px; padding-top:60px;">
-        캐스팅은 새로운 중고차
-  구매 방식을 제안합니다.</h1>
-      <div>
+                  도색면을 견고하게 건조하기 위한 열처리를 진행합니다.              </div>
+                </div>    </div>
 
 
-        <div class="container_right">
-        <h1 style="margin-left: 10px; margin-top:0px; padding-top:60px;">믿을 수 있는 차량을</h1>
+                <div id="section06">
 
-        <h3 style="margin-left: 10px; margin-top:-12px;">
-          쏘카 중 엄선한 차량을 최상의
-        컨디션으로 재탄생 시켰습니다.<br>
-        재탄생 과정 알아보기 ></h3>
-        </div>
+                <div class="step">
 
 
+                <img src="https://images.unsplash.com/photo-1569176330438-fa1ed1042542?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2690&q=80" width="100%">
 
+                <div class="txt">
 
+                <div class="txt_title">
 
-      </div>
-      <div>
-
-
-        <div class="container_right" style="z-index:0;">
-        <h1 style="margin-left: 10px; margin-top:0px; padding-top:60px;">
-        구매 전 직접 타보고</h1>
-
-        <h3 style="margin-left: 10px; margin-top:-12px;">
-          원하는 차량을 24시간/48시간 선택하여
-        직접 타보고 구매를 결정할 수 있습니다.<br>
-        타보기 알아보기 ></h3>
-        </div>
-
-
-
-      </div>
-      <div>
-
-
-                <div class="container_right">
-                <h1 style="margin-left: 10px; margin-top:0px; padding-top:60px;">
-                쉽고 간편하게 구매</h1>
-
-                <h3 style="margin-left: 10px; margin-top:-12px;">
-                  100% 온라인, 비대면으로 모든 과정이
-                진행되어 쉽고 간편합니다.<br>
-                구매방법 알아보기 ></h3>
+                    6.살균소독
                 </div>
 
 
+                    차량 내 세균, 바이러스, 곰팡이 제거 및 잡내 탈취를 진행합니다.
+           </div>
+                  </div>                  </div>
+
+
+                  <div id="section07">
+
+                  <div class="step">
+
+
+                  <img src="https://images.unsplash.com/photo-1569176330438-fa1ed1042542?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2690&q=80" width="100%">
+                  <div class="txt">
+                    <div class="txt_title">
+                    7.마무리
+                  </div>
+                  기존 차량의 매트와 핸들커버를 새 제품으로 교체하고, 블랙박스를 새로 장착합니다.
+                    스크린 리더 지원이 사용 설정되었습니다.</div>
+                    </div>
+                  </div>
+                </h3>
       </div>
-
-
     </section>
 
-
-
-
-
-
-
-
-
-    <section id="con6">
-
-
-      <div class="container_left" data-aos="fade-left">
-      <h1 style="margin-left: 10px; margin-top:0px; padding-top:60px;">캐스팅 품질보증 프로그램으로
-더욱 마음 편하게!</h1>
-
-      <h3 style="margin-left: 10px; margin-top:-12px;">
-        24개월, 40,000km까지
-  구매 후 차량 문제 발생 시
-  캐스팅이 책임지고 수리해드립니다.<br>
-  자세히 보기 ></h3>
-      </div>
-
-
-
-
-
-    </section>
+  </div>
 
 
 
@@ -278,16 +423,36 @@
   </div>
   </div>
 
+  <script>
 
+  $(document).ready(function(){
+    let highlightQueue = [];
+
+
+    let blob = $('span').filter((t)=>{return (($($('span')[t]).position().top <= window.scrollY + $(window).height()) && ($($('span')[t]).position().top>=window.scrollY))});
+
+    for(let x=0; x< blob.length; x++){
+      highlightQueue.push($(blob[x]));
+      window.setTimeout(()=> $(blob[x]).addClass('highlight'), x*1000);
+    }
+
+
+    $(window).scroll(function(){
+    let newBlobs = $('span').filter((t)=>{return (($($('span')[t]).position().top <=    (window.scrollY + $(window).height())) && !($($('span')[t]).hasClass('highlight'))) });
+
+
+    // for( let x=0; x<newBlobs.length; x++){
+  	window.setTimeout(()=> {$(newBlobs[0]).addClass('highlight'); newBlobs.splice(0,1);}, 600);
+    //}
+    })
+  })
+  </script>
 
 
 
   <script>
     AOS.init();
   </script>
-
-
-
 
 
       <script>
@@ -339,59 +504,7 @@
       </script>
 
 
-      <script>
 
-        let ticking = false;
-        function isElementUnderBottom(elem, triggerDiff) {
-      const { top } = elem.getBoundingClientRect();
-      const { innerHeight } = window;
-      return top > innerHeight + (triggerDiff || 0);
-    }
-
-    function handleScroll() {
-      ticking = false;
-
-      const upOnScrollElems = document.querySelectorAll('.up-on-scroll');
-      upOnScrollElems.forEach(elem => {
-        if (isElementUnderBottom(elem)) {
-          elem.style.opacity = "0";
-          elem.style.transform = 'translateY(70px)';
-        } else {
-          elem.style.opacity = "1";
-          elem.style.transform = 'translateY(0px)';
-        }
-      });
-
-      const productImg = document.querySelector('.diff-desc-image-wrap .image-wrap');
-      const productImgRect = productImg.getBoundingClientRect();
-      if (productImgRect.top < 0) {
-        productImg.style.transform = `translateY(${-1 * productImgRect.top * 0.8 }px)`
-      } else {
-        productImg.style.transform = 'none';
-      }
-
-      const changeBgSection = document.querySelector('.background-change-wrap');
-      const changeBgImg = document.querySelector('.background-change-wrap > div');
-      const {top: bgTop, height: bgHeight} = changeBgSection.getBoundingClientRect();
-      if (bgTop < 0) {
-        const rate = (-1) * bgTop / 4;
-        changeBgImg.style.filter = `grayscale(${rate}%)`;
-        changeBgImg.style.opacity = `${(100-rate/3) / 100}`;
-      } else {
-        changeBgImg.style.filter = 'none';
-            changeBgImg.style.opacity = `1`;
-      }
-    }
-
-    function requestTick() {
-      if(!ticking) {
-        requestAnimationFrame(handleScroll);
-      }
-      ticking = true;
-    }
-
-     window.addEventListener('scroll', requestTick);
-        </script>
 
   </body>
   </html>

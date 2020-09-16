@@ -382,6 +382,28 @@ cursor:pointer;}
 
 
 
+                                   span{
+                                    transition:   all 1.2s ease-in;
+                                    padding-top: 5px;
+                                    padding-bottom: 5px;
+
+                                    background-position: 100% 100%;
+                                    background-size: 200% 100%;
+                                    background-image: linear-gradient(to right,
+                                                                         #EDFF39,
+                                                                         #EDFF39 50%,
+                                                                         transparent 50%,
+                                                                         transparent);
+                                   }
+                                   .highlight{
+                                     background-position :0 0
+                                   }
+
+
+
+
+
+
 @media (max-width: 576px) {
 
 
@@ -614,17 +636,36 @@ cursor:pointer;}
                 position: relative;
                 margin-right: auto;
                 padding-right:20%;
-                padding-left: 30%;
+                padding-left: 26%;
 
                  }
 
                  .container_right_2 .box {
-                 background-color: #e9ebee;
-                 width: 500px;
+                 background-color: #E9EBEE;
+                 border-radius: 8px;
+                 width: 600px;
                  height: 300px;
                  padding: 20px;
+                 padding-left: 40px;
+                 padding-bottom: 30px;
+                 margin-right: 70px;
+
+                 color: #1C1F2A;
 
                   }
+
+
+                  .container_right_2 .box .btn {
+                  margin-top: 10px;
+                  color: #32198C;
+
+
+
+                   }
+
+
+
+
                 .container_footer {
                 position: relative;
                 margin-right: auto;
