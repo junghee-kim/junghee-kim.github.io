@@ -80,12 +80,11 @@ span{
 
 #con4{
   background: #ffffff;
-  padding-top: 80px;
-  padding-bottom: 10px;}
+  }
 
   #con4 .container_right {color: #1C1F2A;}
   #con4 .container_right .step {margin-bottom: 200px;}
-  #con4 .container_right .step img {border-radius: 8px;}
+  #con4 .container_right .step img {border-radius: 8px; width: 800px;}
 
   #con4 .container_right .step .txt {margin-top: 20px; position: absolute; display:flex;}
   #con4 .container_right .step .txt .txt_title {margin-right: 60px; width: 140px; font-weight: bold;}
@@ -316,7 +315,7 @@ cursor:pointer;}
   .slide-up-wrap {
     height: 400vh;
 
-    margin-top: -400px;
+    margin-top: -800px;
   }
   .slide-up-wrap < h1 {
     padding-bottom: 50vh;
@@ -496,8 +495,6 @@ cursor:pointer;}
 
   #con4{
     background: #fff;
-    padding-top: 10%;
-    padding-bottom: 10%;
     margin-right: 10%;
   color: #1C1F2A;}
 

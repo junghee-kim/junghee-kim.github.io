@@ -43,24 +43,35 @@
 
 
 
-<body style="overflow-x:hidden">
+<body style="overflow-x:hidden;">
 
 
 
 <div class="container_first">
-  <div class="local-scroll-cont">
-    <a href="#con2" class="scroll-down">
-      <div class="local-scroll-cont" id="local-scroll-cont" style="bottom: 41px;" >
-
-        <img src="https://d353obgi8xzt9w.cloudfront.net/notice/20200724/62482df37bfbe747a40130c5931b88fe.png" width="44px" >
-      </div>
-
-      </a>
 
 
-  </div>
+
+
+
+
+
 
 <section id="main">
+
+
+    <div class="local-scroll-cont">
+      <a href="#con2" class="scroll-down">
+        <div class="local-scroll-cont" id="local-scroll-cont" style="bottom: 41px;" >
+
+          <img src="https://d353obgi8xzt9w.cloudfront.net/notice/20200724/62482df37bfbe747a40130c5931b88fe.png" width="44px" >
+        </div>
+
+        </a>
+    </div>
+
+  <div class="logo" style="width:50%; height:100px; margin-top:0%; margin-left:0%; z-index:01;">
+    <img src="Frame47.png" style="height: 100%">
+  </div>
 
 
 <div class="container">
@@ -99,6 +110,7 @@
         </div>
 
 
+        <div class="container_right">
 
                     <div class="trigger1" id="trigger1">
 
@@ -132,7 +144,7 @@
 
                       }())
                     </script>
-
+  </div>
       </section>
 
 
@@ -157,13 +169,6 @@
 
                 </div>
             </section>
-
-
-
-
-
-
-
 
 
             <div class="trigger" id="trigger2"></div>
@@ -278,8 +283,7 @@
 
     <section id="con6">
 
-
-                <div class="container_right" data-aos="fade-in">
+  <div class="container_right" data-aos="fade-in">
 
       <h1>
         캐스팅 품질보증 프로그램으로<br>
@@ -294,18 +298,12 @@
   <h3><b>자세히 알아보기 &#xE001;</b></h3></div>
 
       </div>
-
-
-
-
-
-    </section>
+  </section>
 
 
 
 
     <section id="con7">
-
 
   <div class="container_left" data-aos="fade-in">
             <h1>
@@ -388,145 +386,147 @@
 
 
   </div>
-  </div>
 
 
 
-<script>
-
-$(document).ready(function(){
-  let highlightQueue = [];
-
-
-  let blob = $('span').filter((t)=>{return (($($('span')[t]).position().top <= window.scrollY + $(window).height()) && ($($('span')[t]).position().top>=window.scrollY))});
-
-  for(let x=0; x< blob.length; x++){
-    highlightQueue.push($(blob[x]));
-    window.setTimeout(()=> $(blob[x]).addClass('highlight'), x*1000);
-  }
-
-
-  $(window).scroll(function(){
-  let newBlobs = $('span').filter((t)=>{return (($($('span')[t]).position().top <=    (window.scrollY + $(window).height())) && !($($('span')[t]).hasClass('highlight'))) });
-
-
-  // for( let x=0; x<newBlobs.length; x++){
-	window.setTimeout(()=> {$(newBlobs[0]).addClass('highlight'); newBlobs.splice(0,1);}, 600);
-  //}
-  })
-})
-</script>
-
-  <script>
-    AOS.init();
-  </script>
-
-
-
-
-
-      <script>
-        var swiper = new Swiper('.second', {
-          slidesPerView: 1.2,
-          spaceBetween: 0,
-          slidesPerGroup: 1,
-          loop: true,
-          loopFillGroupWithBlank: true,
-          roundLengths: true,
-            pagination: {
-              el: '.swiper-pagination',
-              type: 'progressbar',
-            },
-            navigation: {
-              nextEl: '.swiper-button-next',
-              prevEl: '.swiper-button-prev',
-            },
-          });
-      </script>
-
-      <script>
-      $(function () {
-          baloonUp();
-
-          function baloonUp() {
-              $('#local-scroll-cont').animate({
-                  'top': 110
-              }, 1000, null, baloonDown);
-          }
-
-          function baloonDown() {
-              $('#local-scroll-cont').animate({
-                  'top': 100
-              }, 700, null, baloonUp);
-          }
-      });
-
-      </script>
-
-      <script>
-      var $root = $('html, body');
-      $('.scroll-down').click(function() {
-    $root.animate({
-        scrollTop: $( $.attr(this, 'href') ).offset().top
-    }, 500);
-    return false;
-});
-      </script>
-
-
-      <script>
-
-        let ticking = false;
-        function isElementUnderBottom(elem, triggerDiff) {
-      const { top } = elem.getBoundingClientRect();
-      const { innerHeight } = window;
-      return top > innerHeight + (triggerDiff || 0);
-    }
-
-    function handleScroll() {
-      ticking = false;
-
-      const upOnScrollElems = document.querySelectorAll('.up-on-scroll');
-      upOnScrollElems.forEach(elem => {
-        if (isElementUnderBottom(elem)) {
-          elem.style.opacity = "0";
-          elem.style.transform = 'translateY(70px)';
-        } else {
-          elem.style.opacity = "1";
-          elem.style.transform = 'translateY(0px)';
-        }
-      });
-
-      const productImg = document.querySelector('.diff-desc-image-wrap .image-wrap');
-      const productImgRect = productImg.getBoundingClientRect();
-      if (productImgRect.top < 0) {
-        productImg.style.transform = `translateY(${-1 * productImgRect.top * 0.8 }px)`
-      } else {
-        productImg.style.transform = 'none';
-      }
-
-      const changeBgSection = document.querySelector('.background-change-wrap');
-      const changeBgImg = document.querySelector('.background-change-wrap > div');
-      const {top: bgTop, height: bgHeight} = changeBgSection.getBoundingClientRect();
-      if (bgTop < 0) {
-        const rate = (-1) * bgTop / 4;
-        changeBgImg.style.filter = `grayscale(${rate}%)`;
-        changeBgImg.style.opacity = `${(100-rate/3) / 100}`;
-      } else {
-        changeBgImg.style.filter = 'none';
-            changeBgImg.style.opacity = `1`;
-      }
-    }
-
-    function requestTick() {
-      if(!ticking) {
-        requestAnimationFrame(handleScroll);
-      }
-      ticking = true;
-    }
-
-     window.addEventListener('scroll', requestTick);
-        </script>
 
   </body>
+
+
+
+  <script>
+
+  $(document).ready(function(){
+    let highlightQueue = [];
+
+
+    let blob = $('span').filter((t)=>{return (($($('span')[t]).position().top <= window.scrollY + $(window).height()) && ($($('span')[t]).position().top>=window.scrollY))});
+
+    for(let x=0; x< blob.length; x++){
+      highlightQueue.push($(blob[x]));
+      window.setTimeout(()=> $(blob[x]).addClass('highlight'), x*1000);
+    }
+
+
+    $(window).scroll(function(){
+    let newBlobs = $('span').filter((t)=>{return (($($('span')[t]).position().top <=    (window.scrollY + $(window).height())) && !($($('span')[t]).hasClass('highlight'))) });
+
+
+    // for( let x=0; x<newBlobs.length; x++){
+  	window.setTimeout(()=> {$(newBlobs[0]).addClass('highlight'); newBlobs.splice(0,1);}, 600);
+    //}
+    })
+  })
+  </script>
+
+    <script>
+      AOS.init();
+    </script>
+
+
+
+
+
+        <script>
+          var swiper = new Swiper('.second', {
+            slidesPerView: 1.2,
+            spaceBetween: 0,
+            slidesPerGroup: 1,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            roundLengths: true,
+              pagination: {
+                el: '.swiper-pagination',
+                type: 'progressbar',
+              },
+              navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+              },
+            });
+        </script>
+
+        <script>
+        $(function () {
+            baloonUp();
+
+            function baloonUp() {
+                $('#local-scroll-cont').animate({
+                    'top': 110
+                }, 1000, null, baloonDown);
+            }
+
+            function baloonDown() {
+                $('#local-scroll-cont').animate({
+                    'top': 100
+                }, 700, null, baloonUp);
+            }
+        });
+
+        </script>
+
+        <script>
+        var $root = $('html, body');
+        $('.scroll-down').click(function() {
+      $root.animate({
+          scrollTop: $( $.attr(this, 'href') ).offset().top
+      }, 500);
+      return false;
+  });
+        </script>
+
+
+        <script>
+
+          let ticking = false;
+          function isElementUnderBottom(elem, triggerDiff) {
+        const { top } = elem.getBoundingClientRect();
+        const { innerHeight } = window;
+        return top > innerHeight + (triggerDiff || 0);
+      }
+
+      function handleScroll() {
+        ticking = false;
+
+        const upOnScrollElems = document.querySelectorAll('.up-on-scroll');
+        upOnScrollElems.forEach(elem => {
+          if (isElementUnderBottom(elem)) {
+            elem.style.opacity = "0";
+            elem.style.transform = 'translateY(70px)';
+          } else {
+            elem.style.opacity = "1";
+            elem.style.transform = 'translateY(0px)';
+          }
+        });
+
+        const productImg = document.querySelector('.diff-desc-image-wrap .image-wrap');
+        const productImgRect = productImg.getBoundingClientRect();
+        if (productImgRect.top < 0) {
+          productImg.style.transform = `translateY(${-1 * productImgRect.top * 0.8 }px)`
+        } else {
+          productImg.style.transform = 'none';
+        }
+
+        const changeBgSection = document.querySelector('.background-change-wrap');
+        const changeBgImg = document.querySelector('.background-change-wrap > div');
+        const {top: bgTop, height: bgHeight} = changeBgSection.getBoundingClientRect();
+        if (bgTop < 0) {
+          const rate = (-1) * bgTop / 4;
+          changeBgImg.style.filter = `grayscale(${rate}%)`;
+          changeBgImg.style.opacity = `${(100-rate/3) / 100}`;
+        } else {
+          changeBgImg.style.filter = 'none';
+              changeBgImg.style.opacity = `1`;
+        }
+      }
+
+      function requestTick() {
+        if(!ticking) {
+          requestAnimationFrame(handleScroll);
+        }
+        ticking = true;
+      }
+
+       window.addEventListener('scroll', requestTick);
+          </script>
   </html>
