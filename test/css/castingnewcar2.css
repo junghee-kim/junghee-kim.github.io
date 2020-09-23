@@ -68,7 +68,9 @@ span{
   background-size:cover;
   background-position:center;
   padding-top: 80px;}
-#con2 .container_right{}
+#con2 .container_right{
+
+}
 #con2 .container_right .content{}
 
 #con3{
@@ -83,9 +85,9 @@ span{
 
   #con4 .container_right {color: #1C1F2A;}
   #con4 .container_right .step {margin-bottom: 200px;}
-  #con4 .container_right .step img {border-radius: 8px; width: 800px;}
+  #con4 .container_right .step img {border-radius: 4px; width: 100%;}
 
-  #con4 .container_right .step .txt {margin-top: 20px; position: absolute; display:flex;}
+  #con4 .container_right .step .txt {margin-right: 24px; margin-top: 20px; position: absolute; display:flex;}
   #con4 .container_right .step .txt .txt_title {margin-right: 60px; width: 140px; font-weight: bold;}
 
 
