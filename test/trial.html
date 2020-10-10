@@ -61,7 +61,7 @@ img { width: 100%; }
 .fix_motion {background:#ffffff;padding-bottom: 120px; }
 .fix_motion .fix_wrap {position:relative;}
 .fix_motion .fix_wrap:after {clear:both; display:block; content:'';}
-.fix_motion .fix_wrap .tit {position:relative; z-index:50; margin-bottom:170px; color:#333; }
+.fix_motion .fix_wrap .tit {position:relative; z-index:50; margin-bottom:170px; color:#1D202B; }
 .fix_motion .fix_wrap .text_box {float:left; width:50%; padding-top:400px; }
 .fix_motion .fix_wrap .text_box p {max-width:80%; color:#e9ebee; transition:color .2s; font-size:20px; line-height:30px; margin-right: 250px;}
 .fix_motion .fix_wrap .text_box p.active {color:#1D202B;}
@@ -83,23 +83,33 @@ img { width: 100%; }
 
 @media only screen and (max-width: 1024px) {
 
-
 .fix_motion {height: 3000px;} /* 모바일 버전에서 스크롤 거리를 설정함 */
 
-.fix_motion .fix_wrap .tit {text-align: center;}
+.fix_motion .fix_wrap .tit {text-align: center; margin-bottom:12px;color:#1D202B; }
+.fix_motion .fix_wrap h3 {color: #646f7c; text-align: center; margin: 24px; font-size:14px; line-height:20px; margin-block-start: 0px; margin-block-end: 0px;}
+
 .fix_motion .fix_wrap .text_box {float:none; position: sticky; left:0; top:0; z-index:50; width: 100%; padding-top:60px;}
-.fix_motion .fix_wrap .text_box p {position:absolute; left:0;  width: 100%; max-width:100%; padding:0 54px; font-size:16px; line-height: 28px;text-align: center; box-sizing: border-box; opacity: 0; transition:opacity .5s;}
-.fix_motion .fix_wrap .text_box p.active {opacity: 1;}
+.fix_motion .fix_wrap .text_box p {position:absolute; left:0;  width: 100%; max-width:100%; padding:0 80px; font-size:16px; line-height: 24px;text-align: center; box-sizing: border-box; opacity: 0; transition:opacity .5s;}
+.fix_motion .fix_wrap .text_box p.active {opacity: 1; color:#1D202B;}
 .fix_motion .fix_wrap .text_box p.txt02 {margin-top:0px;}
 .fix_motion .fix_wrap .text_box p.txt03 {margin-top:0px;}
 .fix_motion .fix_wrap .text_box p.txt04 {margin-top:0px;}
 .fix_motion .fix_wrap .text_box p.txt05 {margin-top:0px; margin-bottom:0;}
 .fix_motion .fix_wrap .device_fix {top: calc(100vh - 74%); width: 100%; margin-bottom: 200px;}
 .fix_motion .fix_wrap .device_fix .watch_img {width: 300px; height: 272px;}
-.fix_motion .fix_wrap .device_fix .watch_img .slide_wrap {top: 33px; left:24px; width: 250px; height: 620px;}
-.fix_motion .fix_wrap .device_fix .watch_img .slide_wrap .sldie {width: 1250px;}
-.fix_motion .fix_wrap .device_fix .watch_img .slide_wrap .sldie figure {width:250px;}
+.fix_motion .fix_wrap .device_fix .watch_img .slide_wrap {top: 40px; left:40px; width: 220px; height: 620px;}
+.fix_motion .fix_wrap .device_fix .watch_img .slide_wrap .sldie {width: 1100px;}
+.fix_motion .fix_wrap .device_fix .watch_img .slide_wrap .sldie figure {width:220px;}
 }
+.bold{
+  background: #420095;
+  color: #fff;
+    padding: 6px 10px;
+    font-size: 14px;
+    border-radius: 18px;}
+
+
+
 	::selection {
 		background-color: #32198C;
 		color: #ffffff;
@@ -217,22 +227,27 @@ img { width: 100%; }
         <section class="fix_motion">
             <article class="fix_wrap inner">
                 <h1 class="tit">  타보기 이용 과정을 <br>자세히 알아보세요.
-  </h1>
+                  <h3>  * 타보기는 서울, 인천, 경기 지역에서만 이용 가능합니다.</h3>
+
+                </h1>
+
+
                 <div class="text_box">
                     <p class="txt01">
-                    <b>  Step 1</b><br> 원하는 차량의 타보기 기간, 배송지, 배송 시간을 지정하세요.                    </p>
+                      <span class="bold">
+                        <b>  Step 1</b></span><br><br>  원하는 차량의 타보기 기간, 배송지, 배송 시간을 지정하세요.</p>
                     <p class="txt02">
-                    <b> Step 2</b><br> 지정된 시간에 지정된 위치로 배송온 차량을 확인하세요.
+                      <span class="bold"><b> Step 2</b></span><br> <br> 지정된 시간에 지정된 위치로 배송온 차량을 확인하세요.
                     </p>
                     <p class="txt03">
-                    <b> Step 3</b> <br>타보기 기간 동안 자유롭게 차량의 상태를 체크하세요.
+                      <span class="bold"><b> Step 3</b></span><br>  <br>타보기 기간 동안 자유롭게 차량의 상태를 체크하세요.
                     </p>
                     <p class="txt04">
 
-                    <b>  Step 4</b><br> 타보기한 차량이 마음에 들었다면, 구매 계약을 진행하세요.                   </p>
+                      <span class="bold"><b>  Step 4</b></span><br> <br> 타보기한 차량이 마음에 들었다면, 구매 계약을 진행하세요. </p>
 
                       <p class="txt05">
-                      <b>  Step 5 </b><br>타보기를 마친 차량을 반납지에 주차해주세요.                    </p>
+                        <span class="bold"><b>  Step 5 </b></span><br> <br>타보기를 마친 차량을 반납지에 주차해주세요.</p>
 
                 </div>
 
@@ -587,7 +602,7 @@ img { width: 100%; }
     let highlightQueue = [];
 
 
-    let blob = $('span').filter((t)=>{return (($($('span')[t]).position().top <= window.scrollY + $(window).height()) && ($($('span')[t]).position().top>=window.scrollY))});
+    let blob = $('spanh').filter((t)=>{return (($($('spanh')[t]).position().top <= window.scrollY + $(window).height()) && ($($('spanh')[t]).position().top>=window.scrollY))});
 
     for(let x=0; x< blob.length; x++){
       highlightQueue.push($(blob[x]));
@@ -596,7 +611,7 @@ img { width: 100%; }
 
 
     $(window).scroll(function(){
-    let newBlobs = $('span').filter((t)=>{return (($($('span')[t]).position().top <=    (window.scrollY + $(window).height())) && !($($('span')[t]).hasClass('highlight'))) });
+    let newBlobs = $('spanh').filter((t)=>{return (($($('spanh')[t]).position().top <=    (window.scrollY + $(window).height())) && !($($('spanh')[t]).hasClass('highlight'))) });
 
 
     // for( let x=0; x<newBlobs.length; x++){
