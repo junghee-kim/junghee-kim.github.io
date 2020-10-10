@@ -54,41 +54,58 @@ img { width: 100%; }
 
 /* common */
 .wrap {position:relative;}
-.inner {max-width:1100px; height: 100%;  margin: 0 auto;}
+.inner {max-width:1300px; height: 100%;  margin-left:15%;}
 
 /* main */
 
 .fix_motion {background:#ffffff;padding-bottom: 120px; }
 .fix_motion .fix_wrap {position:relative;}
 .fix_motion .fix_wrap:after {clear:both; display:block; content:'';}
-.fix_motion .fix_wrap .tit {position:relative; z-index:50; margin-bottom:170px; color:#1D202B; }
-.fix_motion .fix_wrap .text_box {float:left; width:50%; padding-top:400px; }
-.fix_motion .fix_wrap .text_box p {max-width:80%; color:#e9ebee; transition:color .2s; font-size:20px; line-height:30px; margin-right: 250px;}
+.fix_motion .fix_wrap .tit {position:relative; z-index:50; margin-bottom:10px; color:#1D202B; }
+.fix_motion .fix_wrap .text_box {float:left; width:43%; padding-top:300px; margin-left: 40px;}
+.fix_motion .fix_wrap .text_box p {max-width:80%; color:#8C8C8C; transition:color .0s; font-size:20px; line-height:30px; margin-right: 250px;}
 .fix_motion .fix_wrap .text_box p.active {color:#1D202B;}
+
 .fix_motion .fix_wrap .text_box p.txt02 {margin-top:240px;}
 .fix_motion .fix_wrap .text_box p.txt03 {margin-top:240px;}
 .fix_motion .fix_wrap .text_box p.txt04 {margin-top:240px;}
 .fix_motion .fix_wrap .text_box p.txt05 {margin-top:240px; margin-bottom: 600px;}
-
-
 .fix_motion .fix_wrap .device_fix {position: sticky; position: -webkit-sticky; top:calc(50vh - 300px); left: 0; z-index: 40; float:left; width:50%;}
-.no-csspositionsticky .fix_motion .fix_wrap .device_fix {position: relative; top:600px;}
-.fix_motion .fix_wrap .device_fix .watch_img {position:relative; width: 300px; height:500px; margin:0 auto; }
+.no-csspositionsticky .fix_motion .fix_wrap .device_fix {position: relative; top:600px; }
+.fix_motion .fix_wrap .device_fix .watch_img {position:relative; width: 360px; height:500px; margin:0 auto; }
 .fix_motion .fix_wrap .device_fix .watch_img .img_device {position:absolute; left:0; top:0; right:0; bottom:0; z-index:20;}
-.fix_motion .fix_wrap .device_fix .watch_img .slide_wrap {overflow:hidden; position: absolute; left:28px; top:34px; z-index:10; width:240px; height:600px;}
-.fix_motion .fix_wrap .device_fix .watch_img .slide_wrap .sldie {width: 1200px; height: 100%; transition:transform .5s;}
-.fix_motion .fix_wrap .device_fix .watch_img .slide_wrap .sldie figure {float:left; width:240px; }
+.fix_motion .fix_wrap .device_fix .watch_img .slide_wrap {overflow:hidden; position: absolute; left:46px; top:48px; z-index:10; width:270px; height:568px;}
+.fix_motion .fix_wrap .device_fix .watch_img .slide_wrap .sldie {width: 1350px; height: 100%; transition:transform .5s;}
+.fix_motion .fix_wrap .device_fix .watch_img .slide_wrap .sldie figure {float:left; width:270px; }
+
+.fix_motion .fix_wrap .text_box p.txt02 .bold{ background: #8C8C8C;color: #fff;padding: 6px 10px;font-size: 14px; border-radius: 18px;}
+.fix_motion .fix_wrap .text_box p.txt02 .bold.active2 {  background: #420095; color: #fff; padding: 6px 10px; font-size: 14px; border-radius: 18px;}
+
+.fix_motion .fix_wrap .text_box p.txt01 .bold{ background: #8C8C8C;color: #fff;padding: 6px 10px;font-size: 14px; border-radius: 18px;}
+.fix_motion .fix_wrap .text_box p.txt01 .bold.active2 {  background: #420095; color: #fff; padding: 6px 10px; font-size: 14px; border-radius: 18px;}
+
+.fix_motion .fix_wrap .text_box p.txt03 .bold{ background: #8C8C8C;color: #fff;padding: 6px 10px;font-size: 14px; border-radius: 18px;}
+.fix_motion .fix_wrap .text_box p.txt03 .bold.active2 {  background: #420095; color: #fff; padding: 6px 10px; font-size: 14px; border-radius: 18px;}
+
+.fix_motion .fix_wrap .text_box p.txt04 .bold{ background: #8C8C8C;color: #fff;padding: 6px 10px;font-size: 14px; border-radius: 18px;}
+.fix_motion .fix_wrap .text_box p.txt04 .bold.active2 {  background: #420095; color: #fff; padding: 6px 10px; font-size: 14px; border-radius: 18px;}
+
+.fix_motion .fix_wrap .text_box p.txt05 .bold{ background: #8C8C8C;color: #fff;padding: 6px 10px;font-size: 14px; border-radius: 18px;}
+.fix_motion .fix_wrap .text_box p.txt05 .bold.active2 {  background: #420095; color: #fff; padding: 6px 10px; font-size: 14px; border-radius: 18px;}
 
 
 
 @media only screen and (max-width: 1024px) {
+  .inner {margin: 0 auto;}
+
+
 
 .fix_motion {height: 3000px;} /* 모바일 버전에서 스크롤 거리를 설정함 */
 
 .fix_motion .fix_wrap .tit {text-align: center; margin-bottom:12px;color:#1D202B; }
 .fix_motion .fix_wrap h3 {color: #646f7c; text-align: center; margin: 24px; font-size:14px; line-height:20px; margin-block-start: 0px; margin-block-end: 0px;}
 
-.fix_motion .fix_wrap .text_box {float:none; position: sticky; left:0; top:0; z-index:50; width: 100%; padding-top:60px;}
+.fix_motion .fix_wrap .text_box {float:none; position: sticky; left:0; top:0; z-index:50; width: 100%; padding-top:60px; margin-left: 0px;}
 .fix_motion .fix_wrap .text_box p {position:absolute; left:0;  width: 100%; max-width:100%; padding:0 80px; font-size:16px; line-height: 24px;text-align: center; box-sizing: border-box; opacity: 0; transition:opacity .5s;}
 .fix_motion .fix_wrap .text_box p.active {opacity: 1; color:#1D202B;}
 .fix_motion .fix_wrap .text_box p.txt02 {margin-top:0px;}
@@ -101,6 +118,7 @@ img { width: 100%; }
 .fix_motion .fix_wrap .device_fix .watch_img .slide_wrap .sldie {width: 1100px;}
 .fix_motion .fix_wrap .device_fix .watch_img .slide_wrap .sldie figure {width:220px;}
 }
+
 .bold{
   background: #420095;
   color: #fff;
@@ -161,7 +179,7 @@ img { width: 100%; }
 
 
 
-    <h1 data-aos="fade-up">
+    <h1>
 
     캐스팅은 원하는 차량을<br>
       미리 타보며 꼼꼼하게
@@ -171,18 +189,19 @@ img { width: 100%; }
 
 
   </section>
+  <div class="main_block"></div>
+
 </div>
 
 
 
 
       <section id="con2">
-        <div class="container_right">
+        <div class="container_right"  data-aos="fade-up">
 
           <h1>
             check
 </h1>
-
 
         <div class="content">
 
@@ -237,7 +256,9 @@ img { width: 100%; }
                       <span class="bold">
                         <b>  Step 1</b></span><br><br>  원하는 차량의 타보기 기간, 배송지, 배송 시간을 지정하세요.</p>
                     <p class="txt02">
-                      <span class="bold"><b> Step 2</b></span><br> <br> 지정된 시간에 지정된 위치로 배송온 차량을 확인하세요.
+                      <span class="bold"><b> Step 2</b></span><br>
+
+                      <br> 지정된 시간에 지정된 위치로 배송온 차량을 확인하세요.
                     </p>
                     <p class="txt03">
                       <span class="bold"><b> Step 3</b></span><br>  <br>타보기 기간 동안 자유롭게 차량의 상태를 체크하세요.
@@ -339,13 +360,21 @@ img { width: 100%; }
 
                       imageChange(imgWidth * 0); //(이미지넓이 x 이미지 인덱스) 이미지가 이동할 값을 넘겨줍니다
                       $('.fix_motion .text_box .txt01').addClass('active');
+                      $('.fix_motion .text_box .txt01 .bold').addClass('active2');
+
+
+
 
                   }
+
 
                   if(percent >= 32 && percent < 52) {
 
                       imageChange(imgWidth * 1); //(이미지넓이 x 이미지 인덱스) 이미지가 이동할 값을 넘겨줍니다
                       $('.fix_motion .text_box .txt02').addClass('active');
+                      $('.fix_motion .text_box .txt02 .bold').addClass('active2');
+
+
 
                   }
 
@@ -353,6 +382,8 @@ img { width: 100%; }
 
                       imageChange(imgWidth * 2); //(이미지넓이 x 이미지 인덱스) 이미지가 이동할 값을 넘겨줍니다
                       $('.fix_motion .text_box .txt03').addClass('active');
+                      $('.fix_motion .text_box .txt03 .bold').addClass('active2');
+
 
                   }
 
@@ -360,6 +391,8 @@ img { width: 100%; }
 
                       imageChange(imgWidth * 3); //(이미지넓이 x 이미지 인덱스) 이미지가 이동할 값을 넘겨줍니다
                       $('.fix_motion .text_box .txt04').addClass('active');
+                      $('.fix_motion .text_box .txt04 .bold').addClass('active2');
+
 
                   }
 
@@ -367,6 +400,8 @@ img { width: 100%; }
 
                       imageChange(imgWidth * 4); //(이미지넓이 x 이미지 인덱스) 이미지가 이동할 값을 넘겨줍니다
                       $('.fix_motion .text_box .txt05').addClass('active');
+                      $('.fix_motion .text_box .txt05 .bold').addClass('active2');
+
 
                   }
 
@@ -377,6 +412,12 @@ img { width: 100%; }
                       $('.fix_motion .text_box .txt03').removeClass('active');
                       $('.fix_motion .text_box .txt04').removeClass('active');
                       $('.fix_motion .text_box .txt05').removeClass('active');
+                      $('.fix_motion .text_box .txt01 .bold').removeClass('active2');
+                      $('.fix_motion .text_box .txt02 .bold').removeClass('active2');
+                      $('.fix_motion .text_box .txt03 .bold').removeClass('active2');
+                      $('.fix_motion .text_box .txt04 .bold').removeClass('active2');
+                      $('.fix_motion .text_box .txt05 .bold').removeClass('active2');
+
 
                   }
 
@@ -486,15 +527,6 @@ img { width: 100%; }
   });
   </script>
 
-
-
-
-
-
-    <section id="con4">
-
-
-    </section>
 
 
 
