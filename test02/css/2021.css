@@ -43,7 +43,7 @@ c2{font-size:14px;line-height:22px; color:#646f7c; margin-block-start: 8px;}
 
 
 #campaign-01 {
-  background: url(https://d353obgi8xzt9w.cloudfront.net/notice/20210616/006ebaea39b953050ee96818387ff056.jpg) 0 100%  repeat fixed #eee;
+  background: url('https://d353obgi8xzt9w.cloudfront.net/notice/20210616/006ebaea39b953050ee96818387ff056.jpg') repeat fixed #eee;
   height: 100vh;
   background-repeat : no-repeat;
   background-size : 100%;
@@ -61,7 +61,7 @@ c2{font-size:14px;line-height:22px; color:#646f7c; margin-block-start: 8px;}
 }
 
 #campaign-02 {
-  background: url(https://d353obgi8xzt9w.cloudfront.net/notice/20210616/d4f5fad6e71fa46bf6b2a05c835c8e5c.jpg) 100% 0 repeat fixed  ;
+  background: url('https://d353obgi8xzt9w.cloudfront.net/notice/20210616/d4f5fad6e71fa46bf6b2a05c835c8e5c.jpg') repeat fixed  ;
   min-height: 100vh;
   background-repeat : no-repeat;
   background-size : cover;
@@ -84,7 +84,7 @@ c2{font-size:14px;line-height:22px; color:#646f7c; margin-block-start: 8px;}
 
 
 #campaign-03 {
-  background: url(https://d353obgi8xzt9w.cloudfront.net/notice/20210616/bddde1f86a896f79d407f3df5f76fcc9.jpg) 100% 0 repeat fixed ;
+  background: url('https://d353obgi8xzt9w.cloudfront.net/notice/20210616/bddde1f86a896f79d407f3df5f76fcc9.jpg') repeat fixed ;
   min-height: 100vh;
   margin: 0 auto;
   background-repeat : no-repeat;
