@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - ScrollMagic Demo (13) - Parallax Sections</title>
+  <link rel="stylesheet" href="./style.css">
+
+  <script src="js/aos.js"></script>
+  <script src='js/jquery.min.js'></script>
+  <script src='js/ScrollMagic.min.js'></script>
+  <script src='js/ScrollMagic02.min.js'></script>
+  <script src='js/ScrollToPlugin.min.js'></script>
+
+  <script src='js/TweenMax.min.js'></script>
+  <script src='js/animation.gsap.js'></script>
+    <link rel="stylesheet" href="css/aos.css">
+
+
+</head>
+<style>
+
+.parallaxParent {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background {
+  height: 200%;
+  position: relative;
+  top: -100%;
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 130px;
+  color: #fff;
+}
+
+.bg1 {
+  background: url(https://d353obgi8xzt9w.cloudfront.net/notice/20210617/a5b2c34f358a07fb03e15dd3971686cc.jpg) 100% 0;
+  background-size: cover;
+  background-position: 0% 100%;
+}
+
+.bg2 {
+background: url('https://d353obgi8xzt9w.cloudfront.net/notice/20210615/c85e7b351fa1bf190cb4e0eecca9b09e.jpg') 100% 0;
+
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.bg3 {
+  background: url(https://d353obgi8xzt9w.cloudfront.net/notice/20210617/a5b2c34f358a07fb03e15dd3971686cc.jpg) 100% 0;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.content {
+  padding: 100px 30px;
+  font-size: 20px;
+  line-height: 130%;
+}
+.content p {
+  margin: 20px 0;
+}
+
+</style>
+<body>
+<!-- partial:index.partial.html -->
+<div class="wrap">
+	<div class="main">
+
+		<!-- #parallax1 -->
+		<div id="parallax1" class="parallaxParent">
+			<div class="background bg1">
+	<strong class="title">
+        이런 날, 방안에서<br><span data-aos="fade-in" data-aos-delay="300"> 쏘카</span>
+        추억이 쌓일리 없으니까	</strong>
+
+			</div>
+		</div>
+
+
+		<!-- #parallax2 -->
+		<div id="parallax2" class="parallaxParent">
+			<div class="background bg2">
+				<strong class="title">이런날</strong></div>
+		</div>
+
+
+
+
+    		<!-- #parallax3 -->
+    		<div id="parallax3" class="parallaxParent">
+    			<div class="background bg3">
+    				<strong class="title">Cool!</strong></div>
+    		</div>
+
+		<div class="content ct2">
+			<p>Do consequat Lorem do amet occaecat sunt tempor ad incididunt irure cillum fugiat consectetur. Eiusmod magna exercitation Lorem amet nisi ex aliquip incididunt.</p>
+		<p>Minim laborum aliquip Lorem consequat reprehenderit nulla esse non nisi officia. Nostrud irure esse aliquip ut irure eiusmod reprehenderit dolore veniam aliquip nulla ad amet incididunt. Enim voluptate sunt amet officia nisi laborum mollit quis mollit dolore. Laboris duis in et commodo do excepteur labore occaecat nisi. Quis do esse non magna adipisicing qui.</p>
+		</div>
+
+	</div>
+	<div class="footer"><a href="https://nykim.work">nykim.work</a></div>
+</div>
+<!-- partial -->
+<script  src="js/script.js"></script>
+
+</body>
+</html>
