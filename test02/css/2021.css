@@ -369,17 +369,212 @@ display: contents;
 
 
 @media (min-width: 576px) {
+#campaign-01 {
+  background: url(https://d353obgi8xzt9w.cloudfront.net/notice/20210616/006ebaea39b953050ee96818387ff056.jpg) 0 100%  repeat fixed #eee;
+  height: 100vh;
+  background-repeat : no-repeat;
+  background-size : 100%;
+  background-position: 0 100%;
+  width: 100%;
+  position: relative;
+}
+
+#campaign-01 article {
+  height:30vh;
+  position: absolute;
+  text-align: center;
+  top: 150px;
+  width: 100%;
+}
+
+#campaign-02 {
+  background: url(https://d353obgi8xzt9w.cloudfront.net/notice/20210616/d4f5fad6e71fa46bf6b2a05c835c8e5c.jpg) 100% 0 repeat fixed  ;
+  min-height: 100vh;
+  background-repeat : no-repeat;
+  background-size : cover;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1920px;
+  position: relative;
+  -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.3);
+  box-shadow: 0 0 50px rgba(0,0,0,0.3);
+}
+
+#campaign-02 article {
+  height: 458px;
+  position: absolute;
+  text-align: center;
+  top: 150px;
+  width: 100%;
+}
+
+
+
+#campaign-03 {
+  background: url(https://d353obgi8xzt9w.cloudfront.net/notice/20210616/bddde1f86a896f79d407f3df5f76fcc9.jpg) 100% 0 repeat fixed ;
+  min-height: 100vh;
+  margin: 0 auto;
+  background-repeat : no-repeat;
+  background-size : cover;
+  width: 100%;
+  max-width: 1920px;
+  position: relative;
+}
+
+#campaign-03 article {
+  height: 458px;
+  position: absolute;
+  text-align: center;
+  top: 150px;
+  width: 100%;
+}
+
+#campaign-01 b1 {color: #fff;}
+#campaign-02 b1 {color: #fff;}
+#campaign-03 b1 {color: #fff;}
+
+
 
 
 
 
 }
 @media (min-width: 768px) {
+#campaign-01 {
+  background: url(https://d353obgi8xzt9w.cloudfront.net/notice/20210616/006ebaea39b953050ee96818387ff056.jpg) 0 100%  repeat fixed #eee;
+  height: 100vh;
+  background-repeat : no-repeat;
+  background-size : 100%;
+  background-position: 0 100%;
+  width: 100%;
+  position: relative;
+}
+
+#campaign-01 article {
+  height:30vh;
+  position: absolute;
+  text-align: center;
+  top: 150px;
+  width: 100%;
+}
+
+#campaign-02 {
+  background: url(https://d353obgi8xzt9w.cloudfront.net/notice/20210616/d4f5fad6e71fa46bf6b2a05c835c8e5c.jpg) 100% 0 repeat fixed  ;
+  min-height: 100vh;
+  background-repeat : no-repeat;
+  background-size : cover;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1920px;
+  position: relative;
+  -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.3);
+  box-shadow: 0 0 50px rgba(0,0,0,0.3);
+}
+
+#campaign-02 article {
+  height: 458px;
+  position: absolute;
+  text-align: center;
+  top: 150px;
+  width: 100%;
+}
+
+
+
+#campaign-03 {
+  background: url(https://d353obgi8xzt9w.cloudfront.net/notice/20210616/bddde1f86a896f79d407f3df5f76fcc9.jpg) 100% 0 repeat fixed ;
+  min-height: 100vh;
+  margin: 0 auto;
+  background-repeat : no-repeat;
+  background-size : cover;
+  width: 100%;
+  max-width: 1920px;
+  position: relative;
+}
+
+#campaign-03 article {
+  height: 458px;
+  position: absolute;
+  text-align: center;
+  top: 150px;
+  width: 100%;
+}
+
+#campaign-01 b1 {color: #fff;}
+#campaign-02 b1 {color: #fff;}
+#campaign-03 b1 {color: #fff;}
+
+
 
 
 
   }
 @media (min-width: 992px) {
+#campaign-01 {
+  background: url(https://d353obgi8xzt9w.cloudfront.net/notice/20210616/006ebaea39b953050ee96818387ff056.jpg) 0 100%  repeat fixed #eee;
+  height: 100vh;
+  background-repeat : no-repeat;
+  background-size : 100%;
+  background-position: 0 100%;
+  width: 100%;
+  position: relative;
+}
+
+#campaign-01 article {
+  height:30vh;
+  position: absolute;
+  text-align: center;
+  top: 150px;
+  width: 100%;
+}
+
+#campaign-02 {
+  background: url(https://d353obgi8xzt9w.cloudfront.net/notice/20210616/d4f5fad6e71fa46bf6b2a05c835c8e5c.jpg) 100% 0 repeat fixed  ;
+  min-height: 100vh;
+  background-repeat : no-repeat;
+  background-size : cover;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1920px;
+  position: relative;
+  -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.3);
+  box-shadow: 0 0 50px rgba(0,0,0,0.3);
+}
+
+#campaign-02 article {
+  height: 458px;
+  position: absolute;
+  text-align: center;
+  top: 150px;
+  width: 100%;
+}
+
+
+
+#campaign-03 {
+  background: url(https://d353obgi8xzt9w.cloudfront.net/notice/20210616/bddde1f86a896f79d407f3df5f76fcc9.jpg) 100% 0 repeat fixed ;
+  min-height: 100vh;
+  margin: 0 auto;
+  background-repeat : no-repeat;
+  background-size : cover;
+  width: 100%;
+  max-width: 1920px;
+  position: relative;
+}
+
+#campaign-03 article {
+  height: 458px;
+  position: absolute;
+  text-align: center;
+  top: 150px;
+  width: 100%;
+}
+
+#campaign-01 b1 {color: #fff;}
+#campaign-02 b1 {color: #fff;}
+#campaign-03 b1 {color: #fff;}
+
+
 
 
 
