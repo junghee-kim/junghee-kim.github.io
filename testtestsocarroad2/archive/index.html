@@ -1,0 +1,240 @@
+<!doctype html>
+<html>
+  <head>
+<meta charset="utf-8">
+<title>SOCAR ROAD</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta property="og:description" content="길 위에서 만들어가는 나만의 이야기">
+<meta property="og:title" content="SOCAR ROAD">
+<meta property="og:image" content="../og.jpg" />
+<link rel="shortcut icon" type="favicon" href="../p.png" />
+<link rel="stylesheet" href="archive.css">
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script type="text/javascript">
+    	$(function() {
+  			$('#contents').addClass('loader');
+		});
+    </script>
+
+
+    	<script type="text/javascript">
+    	//<![
+    		$(document).ready(function(){
+    			tabScroll(".navigation-menu");
+    		});
+    		function tabScroll(id){
+    			var tabId = $(id);
+    			var tabIdtop = tabId.offset().top;
+    			var tabIdHe = tabId.height();
+
+    			$(window).scroll(function(){
+
+    			});
+
+    			tabId.find("li").each(function(){
+    				var liThis = $(this);
+    				var divId = liThis.find("a").attr("href");
+    				var divIdtop = $(divId).offset().top-tabIdHe;
+    				liThis.bind("click", function(e){
+    					e.preventDefault();
+    					$('body,html').animate({scrollTop: divIdtop},200);
+    				});
+    				$(window).scroll(function(){
+    					if ($(this).scrollTop() >= divIdtop-1) {
+    						liThis.addClass("on").siblings().removeClass("on");
+    					}
+    				});
+    			});
+    		}
+
+    	</script>
+
+
+</head>
+
+<body>
+
+
+  <header class="nav-down">
+
+  <div class="text2">
+      <a href="../index.html"><img src="img/logo_b.png" width="140px"></a>
+    <div class="button_container" id="toggle"><span class="top"></span><span class="middle"></span><span class="bottom"></span></div>
+    <div class="overlay" id="overlay">
+      <nav class="overlay-menu">
+        <ul>
+          <hr>
+
+          <a href="../guide/index.html">Trip Info.</a>
+          <a href="../photo/index.html">Photo Clip</a>
+          <a href="index.html">Archive</a>
+
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+
+
+
+<div id="header">
+<nav id="navigation-menu">
+<p><h1>Archive</h1></p>
+
+
+<div class="tabList">
+<ul class="navigation-menu">
+<li><a href="#section01"><span class="number">VOL.10</span>Kick The Road</a></li>
+<li><a href="#section02"><span class="number">VOL.9</span>Run to the Blue</a></li>
+
+
+
+</ul>
+</div>
+              </nav>
+            </div>
+
+
+
+
+
+
+<div id="header_mo">
+<nav id="navigation-menu_mo">
+
+
+
+<p><h1>Archive</h1></p>
+
+</nav>
+</div>
+
+
+
+
+
+
+<div id="contents">
+    <div id="container">
+        <div id="main">
+
+
+
+<section id="section-1">
+  <section id="section01">
+    <div class="content">
+  <ol>
+
+
+<li class="txt">
+  <a href="../index.html">
+  <img src="img/postervol10.jpg" width="100%"  onMouseOver="this.style.opacity='.5'; this.style.filter='alpha(opacity=60)'"onMouseOut="this.style.opacity='1.0'; this.style.filter='alpha(opacity=100)'">
+  <p>SOCAR ROAD  FILMS 10</p>
+  <li class="sub">‹Kick The Road›</li></a>
+
+</li>
+  </ol>
+  </div>
+
+</section>
+</section>
+
+
+        <section id="section-2">
+          <div id="section02">
+
+
+            <div class="content">
+          <ol>
+
+
+
+
+            <li class="txt">
+              <a href="../vol9/index.html">
+
+              <img src="img/postervol9.jpg" width="100%"  onMouseOver="this.style.opacity='.5'; this.style.filter='alpha(opacity=60)'"onMouseOut="this.style.opacity='1.0'; this.style.filter='alpha(opacity=100)'" >
+              <p>SOCAR ROAD  FILMS 9</p>
+                <li class="sub">‹Run to the Blue›</li>
+              </a>
+
+
+
+
+
+
+            </li>
+
+          </ol>
+          </div>
+
+
+                </section>
+              </section>
+
+
+
+</div>
+</div>
+
+
+
+  <section id="footer">
+  © 2022 SOCAR ROAD All Rights Reserved.<br>
+  </section>
+
+<script>
+
+    $('#toggle').click(function() {
+       $(this).toggleClass('active');
+       $('#overlay').toggleClass('open');
+      });
+
+</script>
+
+<script>
+// Hide Header on on scroll down
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('header').outerHeight();
+
+$(window).scroll(function(event){
+didScroll = true;
+});
+
+setInterval(function() {
+if (didScroll) {
+    hasScrolled();
+    didScroll = false;
+}
+}, 250);
+
+function hasScrolled() {
+var st = $(this).scrollTop();
+
+// Make sure they scroll more than delta
+if(Math.abs(lastScrollTop - st) <= delta)
+    return;
+
+// If they scrolled down and are past the navbar, add class .nav-up.
+// This is necessary so you never see what is "behind" the navbar.
+if (st > lastScrollTop && st > navbarHeight){
+    // Scroll Down
+    $('header').removeClass('nav-down').addClass('nav-up');
+} else {
+    // Scroll Up
+    if(st + $(window).height() < $(document).height()) {
+        $('header').removeClass('nav-up').addClass('nav-down');
+    }
+}
+
+lastScrollTop = st;
+}
+</script>
+
+
+</body></html>

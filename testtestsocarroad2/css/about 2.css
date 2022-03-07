@@ -1,0 +1,106 @@
+.button_container {position: relative; top: -28px; left: 300px; height: 3px; width: 22px;cursor: pointer; z-index: 100; transition: opacity 0.25s ease;}
+.button_container:hover {opacity: 0.7;}
+.button_container.active .top {transform: translateY(6px) translateX(0) rotate(45deg);background: #FFF;}
+.button_container.active .middle {opacity: 0;background: #FFF;}
+.button_container.active .bottom {transform: translateY(-10px) translateX(0) rotate(-45deg);background: #FFF;}
+.button_container span {background: #969696;border: none;height: 2px; width: 100%;position: absolute;top: 0;left: 0;transition: all 0.35s ease;cursor: pointer;}
+.button_container span:nth-of-type(2) {top: 8px;}
+.button_container span:nth-of-type(3) {top: 16px;}
+.overlay {position: fixed; background: #000000;  top: 0;  left: 0;  width: 100%; height: 0%; opacity: 0; visibility: hidden; transition: opacity 0.25s, visibility 0.25s, height 0.25s; overflow: hidden;}
+.overlay.open {opacity: 0.9; visibility: visible;  height: 100%;}
+.overlay nav {position: relative;height: 70%; top: 45%;transform: translateY(-50%);font-size: 32px;text-align: left;padding: 28px;}
+.overlay ul {list-style: none; padding: 0; margin: 0 auto;display: inline-block;position: relative;height: 100%;}
+.overlay ul a {display: block;position: relative;color: #FFF;text-decoration: none;overflow: hidden;padding-bottom: 8px;}
+
+
+
+header {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    transition: top 0.2s ease-in-out;
+    width: 100%;
+}
+
+.nav-up {
+    top: -60px;
+}
+#main_mo .text {    border-bottom: solid 1px #d9d9d9;background:#f5f5f5; width: 100%;font-size:14px; line-height:24px; position: fixed; z-index: 99;padding:22px 24px 6px 24px;}
+#main_mo .text img{position: relative; top: -4px;}
+
+
+@font-face {font-family: 'Spoqa Han Sans Neo';src: url(https://frontend-design-system.socar.kr/fonts/SpoqaHanSansNeoRegular.woff2);font-weight:400;}
+@font-face {font-family: 'Spoqa Han Sans Neo';src: url(https://frontend-design-system.socar.kr/fonts/SpoqaHanSansNeoMedium.woff2); font-weight:500;}
+@font-face {font-family: 'Spoqa Han Sans Neo'; src: url(https://frontend-design-system.socar.kr/fonts/SpoqaHanSansNeoBold.woff2);font-weight:700;}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+body,html,section{ background:#000; overflow-x: hidden; margin: 0px;  word-break:keep-all; overflow-wrap:break-word;font-family:'Montserrat','Spoqa Han Sans Neo',sans-serif; }
+
+p{margin-block-end: 0px; margin-block-start: 0px; margin-right: 0px;}
+h1,h2{color:#374553;}
+h3{color:#374553;}
+b1,b2,c1{color:#374553;}
+li, ul{text-decoration: none; list-style-type:none; margin: 0px;padding-inline-start:0px;}
+a{text-decoration: none; color:#374553;}
+h1,c1{font-weight: 700;}
+h2,b1,b2,c2,c3{font-weight: 400;}
+
+h1{font-size:44px; line-height:58px; margin-block-end:32px; margin-block-start: 0px;}
+h2{font-size:18px; line-height:26px; margin-block-end:10px; margin-block-start: 0px; }
+h3{font-size:24px; line-height:36px; margin-block-start: 8px;margin-block-end: 8px;}
+h4{font-size:20px; line-height:32px; margin-block-start: 8px;margin-block-end: 40px;}
+b1{font-size:16px;line-height:26px;}
+b2{font-size:14px;line-height:22px;color:#646f7c; margin-block-start: 8px;}
+c1{font-size:14px;line-height:22px;}
+c2{font-size:14px;line-height:22px; color:#646f7c; margin-block-start: 8px;}
+
+#main{ background-color:#000;text-align:left;}
+#main .text {color: #FFF;font-size:14px; line-height:24px; position: fixed; z-index: 99;padding-top: 20px; padding: 20px 24px 0px 24px;}
+#main .logo {position: fixed; padding: 40% 24px; font-size:14px; line-height:22px; }
+#main .logo p {margin: 12px;}
+#main .popup_mo { padding:140px 0px 0px 0px; color: #fff;text-align: center;font-size:14px;line-height:24px;}
+#main .popup_mo .film{border-radius: 10px; background-color: #fff;padding: 80px;box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);}
+#main .popup_mo .info{text-align: center;font-size:14px;line-height:24px;border-radius: 18px; color: #fff;background: linear-gradient(180deg, rgb(0 0 0 / 0%) 0%, rgb(0 0 0 / 82%) 19.16%, #000000 39.74%);margin: 80px 0px 0px 0px;padding: 60px 28px 100px 28px;}
+#main .popup_mo .info p{margin-block-end: 30px; margin-left: 30px; margin-right: 30px;}
+#footer { text-align: center;background: #000;padding: 24px; border-top: 0px solid #e9ebee; font-size:14px;line-height:24px; color: #fff;}
+.slogan{background: #000;font-size: 14px; line-height: 40px;padding-top: 100px;margin-top: 200px;}
+
+@media (min-width: 768px) {
+#main_mo .text {padding: 80px 10px 0px 100px;}
+#main{ background-color:#000;text-align:left;}
+#main .text {color: #FFF;font-size:14px; line-height:24px; position: fixed; z-index: 99;padding-top: 20px; padding: 20px 24px 0px 24px;}
+#main .logo {position: fixed;    font-size: 22px;  padding: 0px;  text-align: center;  margin: 10% 10%;  line-height: 22px; }
+#main .logo p { font-size: 18px; margin-top: 60px;line-height: 30px;}
+#main .popup_mo { padding:140px 0px 0px 0px; color: #fff;text-align: center;font-size:14px;line-height:24px;}
+#main .popup_mo .film{border-radius: 10px; background-color: #fff;padding: 80px;box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);}
+#main .popup_mo .info{text-align: center;font-size:16px;line-height:28px;color: #fff;background: linear-gradient(180deg, rgb(0 0 0 / 0%) 0%, rgb(0 0 0 / 82%) 19.16%, #000000 39.74%);padding: 100px 28px 100px 28px;margin: 80px 0px 0px 0px;}
+#main .popup_mo .info .txt p{padding: 20px 10% 20px 10%;}
+#main .popup_mo .info {margin-block-end: 0px; margin-left: 30px; margin-right: 30px;}
+#footer { text-align: center;background: #000;padding: 24px; border-top: 1px solid #e9ebee; font-size:14px;line-height:24px; color: #fff;}
+.slogan{background: #000;font-size: 20px; line-height: 100px;padding-top: 100px;margin-top: 200px;}
+.slogan p{ background: #000;margin-top: 0px; padding-bottom: 40px;}
+
+
+}
+
+
+
+@media (min-width: 1200px) {
+  .text{display: none;}
+#main{ background-color:#000;text-align:left;}
+#main .text {color: #FFF;font-size:14px; line-height:24px; position: fixed; z-index: 99;padding-top: 20px; padding: 20px 24px 0px 24px;}
+#main .logo {position: fixed;    font-size: 22px;  padding: 0px;  text-align: center;  margin: 10% 25%;  line-height: 22px; }
+#main .logo p { font-size: 24px; margin-top: 60px;line-height: 40px;}
+#main .popup_mo { padding:140px 0px 0px 0px; color: #fff;text-align: center;font-size:14px;line-height:24px;}
+#main .popup_mo .film{border-radius: 10px; background-color: #fff;padding: 80px;box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);}
+#main .popup_mo .info{text-align: center;font-size:16px;line-height:28px;color: #fff;background: linear-gradient(180deg, rgb(0 0 0 / 0%) 0%, rgb(0 0 0 / 82%) 19.16%, #000000 39.74%);margin: 80px 0px 0px 0px;}
+#main .popup_mo .info .txt p{padding: 20px 30% 20px 30%;}
+#main .popup_mo .info {padding: 80px 28px 60px 28px;margin-block-end: 0px; margin-left: 30px; margin-right: 30px;}
+#footer {     top: 90%;
+    text-align: center;left: 60px;position: fixed;text-align: center;background: #000;padding: 0px; border-top: 0px solid #e9ebee; font-size:14px;line-height:24px; color:#ffffff61;}
+.slogan{background: #000;font-size: 20px; line-height: 130px;padding-top: 100px;margin-top: 200px;}
+.slogan p{ background: #000;margin-top: 0px; padding-bottom: 40px;}
+
+
+
+
+}
