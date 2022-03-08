@@ -96,6 +96,12 @@ http://scripts.sil.org/OFL
 
 *{font-family: 'Campton','Pretendard', sans-serif;}
 
+.txt_memo{background-color: #e9ebee;    color: #3f4146f2;
+    margin-bottom: 30px;
+		margin-top: 30px;
+    font-size: 16px;
+    line-height: 28px;
+	padding-bottom:0px;padding: 20px; border-radius: 8px;}
 
 .arrow{ position: absolute;padding-left: 88px;}
 .button_container {position: relative; top: -28px; left: 80%; height: 3px; width: 22px;cursor: pointer; z-index: 100; transition: opacity 0.25s ease;}
@@ -107,11 +113,11 @@ http://scripts.sil.org/OFL
 .button_container span:nth-of-type(2) {top: 8px;}
 .button_container span:nth-of-type(3) {top: 16px;}
 .overlay {position: fixed; background: #000000;  top: 0;  left: 0;  width: 100%; height: 0%; opacity: 0; visibility: hidden; transition: opacity 0.25s, visibility 0.25s, height 0.25s; overflow: hidden;}
-.overlay.open {opacity: 0.9; visibility: visible;  height: 100%;}
-.overlay nav {position: relative;height: 78%; top: 45%;transform: translateY(-50%);font-size: 24px;text-align: left;padding: 24px;}
+.overlay.open {opacity: 0.95; visibility: visible;  height: 100%;}
+.overlay nav {color: #fff;position: relative;height: 78%; top: 42%;transform: translateY(-50%);font-size: 24px;text-align: left;padding: 24px;}
 .overlay ul {list-style: none; padding: 0; margin: 0 auto;position: relative;height: 100%;}
-.overlay ul a {    font-weight: 500;display: block;position: relative;color: #FFF;text-decoration: none;overflow: hidden;padding-bottom: 20px;}
-.overlay ul hr {border: solid 1px #c4c4c4;margin-bottom: 50px;margin-top: 20px;}
+.overlay ul a {    font-weight: 500;display: block;position: relative;color: #FFF;text-decoration: none;overflow: hidden;padding-bottom: 22px;}
+.overlay ul hr {border: solid 0.7px #c4c4c4;margin-bottom: 50px;margin-top: 8px;}
 .nav-up {top: -60px;}
 header {position: fixed;  top: 0;  z-index: 999;transition: top 0.2s ease-in-out; width: 100%;}
 #navigation-menu {display: none;}
@@ -151,13 +157,13 @@ a:active{text-decoration:none;}
 #main ul { padding-left: 42px; padding-right: 32px;}
 #main li { padding-bottom: 80px}
 #main img { margin: 0 auto; display: block;padding: 24px 8px 24px 0px}
-#main p{color: #3f4146f2;margin-bottom: 6px;font-size:16px;line-height:28px; padding-bottom: 0px}
-#main section {padding-top:60px; list-style:none;}
+#main p{color: #3f4146f2;margin-bottom: 26px;font-size:16px;line-height:28px; padding-bottom: 0px}
+#main section {padding-top:0px; list-style:none;}
 #main section .content ol .sub{font-size: 16px;line-height: 26px;color: #191a1c;padding:0 0 40px 0; list-style:none;}
 #main section .content ol .title{display: flex; align-items: center;font-size:28px; font-weight:700; padding:0 0 15px 0; list-style:none;}
 #footer{position:relative;display:block; clear:both; padding:30px 0px 30px 0px; width:100%; border-top:1px solid #191a1c;background-color: #ffffff; z-index: 01;}
 #footer li {padding-left: 32px;  padding-right: 20%; list-style:none;}
-#navigation-menu_mo {padding: 120px 30px 24px 24px;}
+#navigation-menu_mo {padding: 120px 0px 24px 24px;}
 #navigation-menu_mo p{font-size:16px;line-height:26px; color: #757c80;}
 
 
@@ -191,7 +197,7 @@ a:active{text-decoration:none;}
 @media (min-width: 1200px) {
   #navigation-menu {display: block;}
   #footer {display: none;}
-
+.txt_memo{background-color: #e9ebee;padding: 20px; border-radius: 10px;}
   .tag2{font-size: 16px;margin-bottom: 14px; border: 0px solid #191a1c; border-radius: 28px; background-color: #ffffff4d;margin-right: 12px;padding: 12px 20px; width: 50%;}
 .tabList{position: relative; top: 60px;}
 h1{padding-left: 28px;font-size:38px; line-height:52px; padding-right: 26px; margin-top:0px; margin-bottom:32px; color:#191a1c; padding-top: 24px;}
@@ -228,7 +234,7 @@ img.border-shadow{ box-shadow:2px 2px 6px rgba(40, 50, 60, 0.25); border-radius:
 #main ul { padding-left: 44px; padding-right: 32px; }
 #main section{ float: left;width:100%; border-left:0; color:#242525;padding:0;margin:0 0 0 -1px;height:auto;position: relative;display:block;overflow: -webkit-paged-x;clear:both;}
 #main section .content{ float: left;display:block;position: relative;width:100%;height:100%; margin-bottom: 40px;}
-#main section .content p{ font-size:16px;line-height:26px; margin-bottom: 10px;}
+#main section .content p{ font-size:16px;line-height:26px; margin-bottom: 30px;}
 #main section .content img {
 	margin: 0 auto;
 	display: block;
@@ -238,7 +244,7 @@ margin-top: 0px; margin-bottom: 0px;}
 #main section .content ul li{font-size:16px;line-height:1.8; padding-left:4px; }
 #main section .content ol .title{display: flex;
     position: relative;    justify-content: flex-start; font-size:26px; line-height:44px; font-weight:700; padding: 12px 0px 12px 0px;list-style:none; margin-top: 46px;}
-#main section .content ol .sub{border-bottom: 1px dashed #bababa; margin-top: 0px;    padding: 0px 100px 30px 0px;list-style:none; line-height: 28px; color: #191a1c;}
+#main section .content ol .sub{border-bottom: 1px dashed #bababa; margin-top: 0px;    padding: 0px 30% 30px 0px;list-style:none; line-height: 28px; color: #191a1c;}
 .tag{border: 1px solid #191a1c; border-radius: 6px;margin-right: 6px;padding: 4px 10px; width: 50%;}
 .txt{padding-top: 20px;}
 #main li { padding-bottom: 0px}
