@@ -106,11 +106,11 @@ http://scripts.sil.org/OFL
 .button_container span:nth-of-type(2) {top: 8px;}
 .button_container span:nth-of-type(3) {top: 16px;}
 .overlay {position: fixed; background: #000000;  top: 0;  left: 0;  width: 100%; height: 0%; opacity: 0; visibility: hidden; transition: opacity 0.25s, visibility 0.25s, height 0.25s; overflow: hidden;}
-.overlay.open {opacity: 0.9; visibility: visible;  height: 100%;}
-.overlay nav {position: relative;height: 78%; top: 45%;transform: translateY(-50%);font-size: 24px;text-align: left;padding: 24px;}
+.overlay.open {opacity: 0.95; visibility: visible;  height: 100%;}
+.overlay nav {color: #fff;position: relative;height: 78%; top: 42%;transform: translateY(-50%);font-size: 24px;text-align: left;padding: 24px;}
 .overlay ul {list-style: none; padding: 0; margin: 0 auto;position: relative;height: 100%;}
-.overlay ul a {    font-weight: 500;display: block;position: relative;color: #FFF;text-decoration: none;overflow: hidden;padding-bottom: 20px;}
-.overlay ul hr {border: solid 1px #c4c4c4;margin-bottom: 50px;margin-top: 20px;}
+.overlay ul a {    font-weight: 500;display: block;position: relative;color: #FFF;text-decoration: none;overflow: hidden;padding-bottom: 22px;}
+.overlay ul hr {border: solid 0.7px #c4c4c4;margin-bottom: 50px;margin-top: 8px;}
 .nav-up {top: -60px;}
 
 header {position: fixed;  top: 0;  z-index: 999;transition: top 0.2s ease-in-out; width: 100%;}
@@ -147,7 +147,12 @@ a:active{text-decoration:none;}
 #main{float: left; height:100%; padding:0px;}
 
 
-#main ol {text-align: center;padding-left: 24px; padding-right: 24px; list-style:none;  }
+#main ol {text-align: center;
+    padding-left: 45px;
+    padding-right: 45px;
+    border-top: 1px solid #e9ebee;
+    padding-top: 60px;
+    list-style: none; }
 #main ul { padding-left: 42px; padding-right: 32px;}
 #main li { padding-bottom: 0px}
 #main img { border-radius: 10px;margin-bottom: 100px;margin: 0 auto; display: block;padding: 0px}
@@ -157,7 +162,7 @@ a:active{text-decoration:none;}
 #main section .content ol .title{display: flex; align-items: center;font-size:28px; font-weight:700; padding:0 0 15px 0; list-style:none;}
 #footer{position:relative;display:block; clear:both; padding:30px 0px 30px 0px; width:100%; border-top:1px solid #191a1c;background-color: #ffffff; z-index: 01;}
 #footer li {padding-left: 32px;  padding-right: 20%; list-style:none;}
-#navigation-menu_mo {padding: 120px 30px 24px 24px;}
+#navigation-menu_mo {padding: 120px 30px 0px 24px;}
 #navigation-menu_mo p{font-size:16px;line-height:26px; color: #757c80;}
 
 
@@ -238,7 +243,7 @@ margin-top: 0px; margin-bottom: 0px;}
 #main section .content ul li{font-size:16px;line-height:1.8; padding-left:4px; }
 #main section .content ol .title{display: flex;
     position: relative;    justify-content: flex-start; font-size:26px; line-height:44px; font-weight:700; padding: 12px 0px 12px 0px;list-style:none; margin-top: 46px;}
-#main section .content ol .sub{border-bottom: 1px dashed #bababa; margin-top: 0px;padding-bottom:40px;list-style:none; line-height: 28px; color: #191a1c;}
+#main section .content ol .sub{border-bottom: 0px dashed #bababa; margin-top: 0px;padding-bottom:40px;list-style:none; line-height: 28px; color: #191a1c;}
 .tag{border: 1px solid #191a1c; border-radius: 6px;margin-right: 6px;padding: 4px 10px; width: 50%;}
 .txt{padding-top: 20px;}
 #main li { padding-bottom: 0px}
